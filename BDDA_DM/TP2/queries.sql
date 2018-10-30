@@ -1,0 +1,43 @@
+#--- Exercise 1 ---
+
+# question 1
+SET AUTOCOMMIT=0;
+INSERT INTO R VALUES(5, 6);
+SAVEPOINT my_savepoint1;
+INSERT INTO R VALUES(7, 8);
+SAVEPOINT my_savepoint2;
+INSERT INTO R VALUES(9, 10);
+ROLLBACK TO my_savepoint1;
+INSERT INTO R VALUES(11, 12);
+INSERT INTO R VALUES(23, 6);
+COMMIT;
+
+# question 1 .2
+SET AUTOCOMMIT=0;
+START TRANSACTION;
+SAVEPOINT sp1;
+INSERT INTO villes(cp, nom, ville) VALUES ('14000', 'TIARET', 'TIARET');
+SAVEPOINT sp2;
+INSERT INTO villes(cp, nom, ville) VALUES ('14002', 'SOUGEUR', 'TIARET');
+ROLLBACK TO SAVEPOINT sp2;
+COMMIT;
+SELECT * FROM villes;
+
+#-------------------------------
+
+# question 2
+CREATE TRIGGER Hist AFTER UPDATE ON compte
+FOR EACH ROW
+BEGIN
+INSERT INTO historique_compte(operation, date, utilisateur)
+VALUES('update', NEW.num_compte, NOW(), USER, OLD.solde, NEW.solde);
+
+# question 2 .2
+DROP TRIGGER firstTrigger;
+ALTER TABLE villes DISABLE ALL TRIGGERS;
+ALTER TRIGGER villes ENABLE;
+ALTER TABLE villes ENABLE ALL TRIGGERS;
+ALTER TRIGGER villes DISABLE;
+SHOW TRIGGERS;
+SHOW TRIGGERS FROM tp2dba;
+SELECT * FROM information_schema.`TRIGGERS`WHERE TRIGGER_SCHEMA='tp2dba';
