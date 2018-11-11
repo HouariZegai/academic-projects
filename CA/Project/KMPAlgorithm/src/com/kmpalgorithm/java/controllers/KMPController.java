@@ -81,6 +81,8 @@ public class KMPController implements Initializable {
 
     @FXML
     private void onSearch() {
+        onRemoveOutput();
+
         if(areaInput.getText() == null || areaInput.getText().trim().isEmpty()) {
             toastMsg.show("Input is Empty !", 2000);
             return;
@@ -103,6 +105,7 @@ public class KMPController implements Initializable {
             iconEmojyFound.setGlyphName("EMOTICON_HAPPY");
             iconEmojyFound.setFill(Paint.valueOf("#00b248"));
             linkCountNumber.setText(foundIndex.size() + " Times");
+            setResultTextFlow(foundIndex);
         } else {
             lblFound.setText("Not Found !");
             lblFound.setTextFill(Paint.valueOf("#000"));
@@ -123,6 +126,51 @@ public class KMPController implements Initializable {
         boxResult.setVisible(false);
         ((Hyperlink) boxResult.getChildren().get(1)).setDisable(false);
         fieldResult.getChildren().clear();
+    }
+
+    private void setResultTextFlow(List<Integer> indexs) { // Add Labels structured to TextFlow
+        String inputTxt = areaInput.getText();
+        int patternLength = fieldPattern.getText().length();
+        int indexTableOfFound = 0;
+
+        String str = "";
+
+        for(int i = 0; i < inputTxt.length(); i++) {
+            if(indexTableOfFound < indexs.size() && indexs.get(indexTableOfFound) == i) {
+                indexTableOfFound++;
+                if(!str.equals("")) {
+                    addLabelNotFound(str);
+                    str = "";
+                }
+
+                for(int j = 0; j < patternLength; j++) {
+                    str += inputTxt.charAt(i++);
+                }
+                addLabelFound(str);
+                str = "";
+            } else {
+                str += inputTxt.charAt(i);
+            }
+        }
+
+        if(!str.equals("")) {
+            addLabelNotFound(str);
+        }
+    }
+
+    private void addLabelFound(String txt) {
+        Label label = new Label(txt);
+        label.setStyle("-fx-font-size: 16px;" +
+                "-fx-background-color: #F00");
+
+        fieldResult.getChildren().add(label);
+    }
+
+    private void addLabelNotFound(String txt) {
+        Label label = new Label(txt);
+        label.setStyle("-fx-font-size: 16px;");
+
+        fieldResult.getChildren().add(label);
     }
 
 }

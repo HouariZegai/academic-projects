@@ -15,6 +15,7 @@ public class Launcher extends Application {
 
         stage.setScene(new Scene(root));
         Launcher.stage = stage;
+        stage.setTitle("KMP Algorithm");
         stage.show();
     }
 
