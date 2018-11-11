@@ -1,0 +1,29 @@
+* {
+    -fx-font-family: tahoma
+}
+
+.field {
+    -fx-prompt-text-fill: #888;
+    -fx-font-size: 15px;
+    -jfx-focus-color: #2196f3
+}
+
+.input-area {
+    -fx-background-color: #EFEFEF;
+    -fx-pref-width: 640px;
+    -fx-pref-height: 130px;
+}
+
+.btn {
+    -fx-background-color: #2196f3;
+    -fx-background-radius: 5;
+    -fx-pref-width: 100px;
+    -fx-pref-height: 33px;
+    -fx-text-fill: #FFF;
+    -fx-font-size: 15px;
+    -fx-cursor: hand
+}
+
+.lbl-result {
+    -fx-font-size: 16px
+}

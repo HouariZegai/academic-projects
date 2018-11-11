@@ -1,6 +1,6 @@
 #--- Exercise 1 ---
 
-# question 1
+# Question 1
 SET AUTOCOMMIT=0;
 INSERT INTO R VALUES(5, 6);
 SAVEPOINT my_savepoint1;
@@ -23,21 +23,34 @@ ROLLBACK TO SAVEPOINT sp2;
 COMMIT;
 SELECT * FROM villes;
 
-#-------------------------------
+#---- Exercise 2 ------
 
-# question 2
-CREATE TRIGGER Hist AFTER UPDATE ON compte
+# Question a)
+CREATE TRIGGER historique
+	AFTER UPDATE ON compte
 FOR EACH ROW
 BEGIN
-INSERT INTO historique_compte(operation, date, utilisateur)
-VALUES('update', NEW.num_compte, NOW(), USER, OLD.solde, NEW.solde);
+	INSERT INTO
+		journal_compte(operation, num_compte, date, old_solde, new_solde)
+	VALUES
+		('update', NEW.num_compte, NOW(), OLD.solde, NEW.solde);
+END;
 
-# question 2 .2
-DROP TRIGGER firstTrigger;
-ALTER TABLE villes DISABLE ALL TRIGGERS;
-ALTER TRIGGER villes ENABLE;
-ALTER TABLE villes ENABLE ALL TRIGGERS;
-ALTER TRIGGER villes DISABLE;
+# Question b)
+DROP TRIGGER historique;
+ALTER TABLE compte DISABLE ALL TRIGGERS;
+ALTER TRIGGER historique ENABLE;
+ALTER TABLE compte ENABLE ALL TRIGGERS;
+ALTER TRIGGER historique DISABLE;
 SHOW TRIGGERS;
 SHOW TRIGGERS FROM tp2dba;
-SELECT * FROM information_schema.`TRIGGERS`WHERE TRIGGER_SCHEMA='tp2dba';
+SELECT * FROM information_schema.`TRIGGERS` WHERE TRIGGER_SCHEMA='tp2dba';
+
+# Exercise 3
+CREATE TRIGGER montant_max AFTER UPDATE ON compte
+FOR EACH ROW
+BEGIN
+	IF (OLD.solde - NEW.solde) > 25000.00 THEN
+		UPDATE compte SET solde = OLD.solde WHERE num_compte = OLD.num_compte;
+	END IF;
+END;
