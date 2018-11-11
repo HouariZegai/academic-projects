@@ -19,7 +19,7 @@
    <children>
       <VBox layoutX="41.0" layoutY="33.0" spacing="25.0">
          <children>
-            <VBox spacing="5.0">
+            <VBox fx:id="root" spacing="5.0">
                <children>
                   <StackPane>
                      <children>
@@ -49,14 +49,19 @@
             </HBox>
             <VBox spacing="5.0">
                <children>
-                  <HBox fx:id="boxResult" alignment="CENTER_LEFT" spacing="10.0">
+                  <HBox alignment="CENTER_LEFT" spacing="10.0">
                      <children>
                         <Label styleClass="lbl-result" text="Result:" />
-                        <Label contentDisplay="RIGHT" style="-fx-text-fill: #00b248;" styleClass="lbl-result" text="Found !">
-                           <graphic>
-                              <MaterialDesignIconView fill="#00b248" glyphName="EMOTICON_HAPPY" size="25" />
-                           </graphic></Label>
-                        <Hyperlink fx:id="linkTimes" onAction="#onLinkTimes" styleClass="lbl-result" text="600 Times" />
+                        <HBox fx:id="boxResult" visible="false">
+                           <children>
+                              <Label contentDisplay="RIGHT" style="-fx-text-fill: #00b248;" styleClass="lbl-result" text="Found !">
+                                 <graphic>
+                                    <MaterialDesignIconView fill="#00b248" glyphName="EMOTICON_HAPPY" size="25" />
+                                 </graphic>
+                              </Label>
+                              <Hyperlink fx:id="linkTimes" onAction="#onLinkTimes" styleClass="lbl-result" text="600 Times" />
+                           </children>
+                        </HBox>
                      </children>
                   </HBox>
                   <TextFlow fx:id="fieldResult" prefHeight="150.0" style="-fx-background-color: #EFEFEF;" />
