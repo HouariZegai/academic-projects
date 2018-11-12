@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import de.jensd.fx.glyphs.emojione.EmojiOneView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10.0" style="-fx-background-color: #FFF;" stylesheets="@../css/table-index.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kmpalgorithm.java.controllers.TableIndexController">
+   <children>
+      <StackPane>
+         <children>
+            <EmojiOneView glyphName="X" layoutX="570.0" layoutY="30.0" onMouseClicked="#onClose" size="20" styleClass="icon-close" StackPane.alignment="CENTER_RIGHT" />
+            <Label styleClass="title" text="Found Pattern at:" />
+         </children>
+         <padding>
+            <Insets right="5.0" top="5.0" />
+         </padding>
+      </StackPane>
+      <JFXTreeTableView fx:id="tableIndexFound" prefHeight="406.0" prefWidth="350.0" />
+   </children>
+</VBox>

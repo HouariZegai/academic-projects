@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/kmpalgorithm/java/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kmpalgorithm/java/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/KMPAlgorithm/com/kmpalgorithm/java/searchengine/KMP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/KMPAlgorithm/com/kmpalgorithm/java/searchengine/KMP.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/kmpalgorithm/java/controllers/KMPController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kmpalgorithm/java/controllers/KMPController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/kmpalgorithm/java/searchengine/KMP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kmpalgorithm/java/searchengine/KMP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/kmpalgorithm/resources/views/KMP.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/kmpalgorithm/resources/views/KMP.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -60,39 +62,40 @@
     <session id="-2091718169">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.133" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.47" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
-          <entry key="fxml" value="3" />
-          <entry key="java" value="8" />
+          <entry key="css" value="5" />
+          <entry key="fxml" value="7" />
+          <entry key="java" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="JAVA" value="8" />
-          <entry key="XML" value="3" />
+          <entry key="CSS" value="5" />
+          <entry key="JAVA" value="11" />
+          <entry key="XML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="449" />
-          <entry key="fxml" value="21" />
-          <entry key="java" value="2864" />
+          <entry key="css" value="614" />
+          <entry key="fxml" value="49" />
+          <entry key="java" value="3959" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="450" />
-          <entry key="JAVA" value="2863" />
-          <entry key="XML" value="21" />
+          <entry key="CSS" value="615" />
+          <entry key="JAVA" value="3958" />
+          <entry key="XML" value="49" />
         </counts>
       </usages-collector>
     </session>
@@ -101,20 +104,20 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/kmpalgorithm/java/controllers/KMPController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+            <state relative-caret-position="186">
+              <caret line="180" column="46" selection-start-line="180" selection-start-column="46" selection-end-line="180" selection-end-column="46" />
               <folding>
                 <element signature="method#initialize#0;class#KMPController#0" />
-                <element signature="e#1273#1297#0" />
-                <element signature="e#1337#1361#0" />
+                <element signature="e#1346#1370#0" />
+                <element signature="e#1408#1432#0" />
                 <element signature="method#onLoadFile#0;class#KMPController#0" />
                 <element signature="method#onLinkTimes#0;class#KMPController#0" />
                 <element signature="method#onRemoveOutput#0;class#KMPController#0" />
-                <element signature="method#addLabelFound#0;class#KMPController#0" />
+                <element signature="method#setResultTextFlow#0;class#KMPController#0" />
                 <element signature="method#addLabelNotFound#0;class#KMPController#0" />
               </folding>
             </state>
@@ -122,11 +125,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/kmpalgorithm/resources/views/KMP.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+        <entry file="file://$PROJECT_DIR$/src/com/kmpalgorithm/java/controllers/TableIndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="228">
+              <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+              <folding>
+                <element signature="method#initTable#0;class#TableIndexController#0" />
+                <element signature="class#TableIndexFoundTable#0;class#TableIndexController#0" />
+                <element signature="method#IndexFoundTable#0;class#IndexFoundTable#0;class#TableIndexController#0" />
+                <element signature="e#2754#2755#0" expanded="true" />
+                <element signature="e#2806#2807#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,10 +146,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="CSS File" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>inputText</find>
+      <find>#0</find>
+    </findStrings>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -158,8 +173,11 @@
         <option value="$PROJECT_DIR$/src/com/kmpalgorithm/resources/css/kmp.css" />
         <option value="$PROJECT_DIR$/src/com/kmpalgorithm/resources/views/KMP.fxml" />
         <option value="$PROJECT_DIR$/src/com/kmpalgorithm/java/searchengine/KMPDemo.java" />
-        <option value="$PROJECT_DIR$/src/com/kmpalgorithm/java/searchengine/KMP.java" />
         <option value="$PROJECT_DIR$/src/com/kmpalgorithm/java/Launcher.java" />
+        <option value="$PROJECT_DIR$/src/com/kmpalgorithm/java/searchengine/KMP.java" />
+        <option value="$PROJECT_DIR$/src/com/kmpalgorithm/resources/views/TableIndex.fxml" />
+        <option value="$PROJECT_DIR$/src/com/kmpalgorithm/java/controllers/TableIndexController.java" />
+        <option value="$PROJECT_DIR$/src/com/kmpalgorithm/resources/css/table-index.css" />
         <option value="$PROJECT_DIR$/src/com/kmpalgorithm/java/controllers/KMPController.java" />
       </list>
     </option>
@@ -172,8 +190,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="482" />
-    <option name="y" value="140" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1386" />
     <option name="height" value="788" />
   </component>
@@ -188,7 +206,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,14 +245,6 @@
               <item name="KMPAlgorithm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="kmpalgorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="searchengine" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KMPAlgorithm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KMPAlgorithm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="kmpalgorithm" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -257,7 +267,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -270,9 +280,9 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541976961587" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542007259215" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Jars/JavaFxLibs/jfoenix-8.0.1.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/GenerateTableFx" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -419,18 +429,19 @@
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1541882835723" duration="832000" />
       <workItem from="1541925867835" duration="13000" />
-      <workItem from="1541959478554" duration="11991000" />
+      <workItem from="1541959478554" duration="12481000" />
+      <workItem from="1542001730780" duration="5125000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14138000" />
+    <option name="totallyTimeSpent" value="19753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.26172465" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2655068" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -439,7 +450,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -490,20 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kmpalgorithm/resources/css/kmp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/kmpalgorithm/java/searchengine/KMP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kmpalgorithm/java/Launcher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -516,26 +513,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kmpalgorithm/java/searchengine/KMP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="90" column="59" selection-start-line="90" selection-start-column="59" selection-end-line="90" selection-end-column="59" />
+          <folding>
+            <element signature="method#KMP#1;class#KMP#0" />
+            <element signature="method#computePrefixArray#0;class#KMP#0" />
+            <element signature="method#isFound#0;class#KMP#0" />
+            <element signature="method#searchAndGetIndex#0;class#KMP#0" />
+            <element signature="method#printArray#0;class#KMP#0" />
+            <element signature="method#printArray#1;class#KMP#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kmpalgorithm/resources/views/TableIndex.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kmpalgorithm/resources/css/kmp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kmpalgorithm/resources/css/table-index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/kmpalgorithm/java/controllers/TableIndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="50" column="42" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="42" />
+          <folding>
+            <element signature="method#initTable#0;class#TableIndexController#0" />
+            <element signature="class#TableIndexFoundTable#0;class#TableIndexController#0" />
+            <element signature="method#IndexFoundTable#0;class#IndexFoundTable#0;class#TableIndexController#0" />
+            <element signature="e#2754#2755#0" expanded="true" />
+            <element signature="e#2806#2807#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kmpalgorithm/resources/views/KMP.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="131">
+          <caret line="57" column="89" selection-start-line="57" selection-start-column="83" selection-end-line="57" selection-end-column="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/kmpalgorithm/java/controllers/KMPController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="84" selection-end-column="8" />
+        <state relative-caret-position="186">
+          <caret line="180" column="46" selection-start-line="180" selection-start-column="46" selection-end-line="180" selection-end-column="46" />
           <folding>
             <element signature="method#initialize#0;class#KMPController#0" />
-            <element signature="e#1273#1297#0" />
-            <element signature="e#1337#1361#0" />
+            <element signature="e#1346#1370#0" />
+            <element signature="e#1408#1432#0" />
             <element signature="method#onLoadFile#0;class#KMPController#0" />
             <element signature="method#onLinkTimes#0;class#KMPController#0" />
             <element signature="method#onRemoveOutput#0;class#KMPController#0" />
-            <element signature="method#addLabelFound#0;class#KMPController#0" />
+            <element signature="method#setResultTextFlow#0;class#KMPController#0" />
             <element signature="method#addLabelNotFound#0;class#KMPController#0" />
           </folding>
         </state>

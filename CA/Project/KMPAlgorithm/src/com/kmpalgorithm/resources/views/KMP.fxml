@@ -16,58 +16,62 @@
 <?import javafx.scene.text.TextFlow?>
 
 
-<VBox alignment="TOP_CENTER" spacing="25.0" style="-fx-background-color: #FFF;" stylesheets="@../css/kmp.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kmpalgorithm.java.controllers.KMPController">
+<StackPane fx:id="root" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kmpalgorithm.java.controllers.KMPController">
    <children>
-      <VBox fx:id="root" spacing="5.0">
+      <VBox alignment="TOP_CENTER" spacing="25.0" style="-fx-background-color: #FFF;" stylesheets="@../css/kmp.css">
          <children>
-            <StackPane>
+            <VBox spacing="5.0">
                <children>
-                  <Label styleClass="lbl-result" text="Input :" StackPane.alignment="BOTTOM_LEFT" />
-                  <JFXButton onAction="#onLoadFile" styleClass="btn" text="Load File" StackPane.alignment="CENTER_RIGHT" />
-               </children>
-            </StackPane>
-            <JFXTextArea fx:id="areaInput" labelFloat="true">
-               <styleClass>
-                  <String fx:value="field" />
-                  <String fx:value="input-area" />
-               </styleClass>
-            </JFXTextArea>
-         </children>
-      </VBox>
-      <HBox alignment="CENTER_LEFT" spacing="20.0">
-         <children>
-            <JFXTextField fx:id="fieldPattern" labelFloat="true" prefHeight="30.0" prefWidth="250.0" promptText="Pattern" styleClass="field" />
-            <JFXToggleButton fx:id="toggleCaseSensitive" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="146.0" style="-fx-cursor: hand;" text="Case Sensitive" toggleColor="#2196f3" toggleLineColor="#6ea4cd" />
-            <HBox alignment="CENTER_RIGHT" spacing="5.0" HBox.hgrow="ALWAYS">
-               <children>
-                  <JFXSpinner fx:id="spinnerSearch" radius="12.0" startingAngle="90.0" />
-                  <JFXButton onAction="#onSearch" styleClass="btn" text="Search" />
-               </children>
-            </HBox>
-         </children>
-      </HBox>
-      <VBox spacing="5.0">
-         <children>
-            <HBox alignment="CENTER_LEFT" spacing="10.0">
-               <children>
-                  <Label styleClass="lbl-result" text="Result:" />
-                  <HBox fx:id="boxResult" visible="false">
+                  <StackPane>
                      <children>
-                        <Label contentDisplay="RIGHT" style="-fx-text-fill: #00b248;" styleClass="lbl-result" text="Found !">
-                           <graphic>
-                              <MaterialDesignIconView fill="#00b248" glyphName="EMOTICON_HAPPY" size="25" />
-                           </graphic>
-                        </Label>
-                        <Hyperlink fx:id="linkTimes" onAction="#onLinkTimes" styleClass="lbl-result" text="600 Times" />
+                        <Label styleClass="lbl-result" text="Input :" StackPane.alignment="BOTTOM_LEFT" />
+                        <JFXButton onAction="#onLoadFile" styleClass="btn" text="Load File" StackPane.alignment="CENTER_RIGHT" />
+                     </children>
+                  </StackPane>
+                  <JFXTextArea fx:id="areaInput" labelFloat="true">
+                     <styleClass>
+                        <String fx:value="field" />
+                        <String fx:value="input-area" />
+                     </styleClass>
+                  </JFXTextArea>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" spacing="20.0">
+               <children>
+                  <JFXTextField fx:id="fieldPattern" labelFloat="true" prefHeight="30.0" prefWidth="250.0" promptText="Pattern" styleClass="field" />
+                  <JFXToggleButton fx:id="toggleCaseSensitive" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="146.0" style="-fx-cursor: hand;" text="Case Sensitive" toggleColor="#2196f3" toggleLineColor="#6ea4cd" />
+                  <HBox alignment="CENTER_RIGHT" spacing="5.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXSpinner fx:id="spinnerSearch" radius="12.0" startingAngle="90.0" />
+                        <JFXButton onAction="#onSearch" styleClass="btn" text="Search" />
                      </children>
                   </HBox>
                </children>
             </HBox>
-            <TextFlow fx:id="fieldResult" prefHeight="150.0" style="-fx-background-color: #EFEFEF;" />
+            <VBox spacing="5.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" spacing="10.0">
+                     <children>
+                        <Label styleClass="lbl-result" text="Result:" />
+                        <HBox fx:id="boxResult" visible="false">
+                           <children>
+                              <Label contentDisplay="RIGHT" style="-fx-text-fill: #00b248;" styleClass="lbl-result" text="Found !">
+                                 <graphic>
+                                    <MaterialDesignIconView fill="#00b248" glyphName="EMOTICON_HAPPY" size="25" />
+                                 </graphic>
+                              </Label>
+                              <Hyperlink fx:id="linkTimes" onAction="#onLinkTimes" styleClass="lbl-result" text="600 Times" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <TextFlow fx:id="fieldResult" prefHeight="150.0" style="-fx-background-color: #EFEFEF;" />
+               </children>
+            </VBox>
          </children>
+         <padding>
+            <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+         </padding>
       </VBox>
    </children>
-   <padding>
-      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
-   </padding>
-</VBox>
+</StackPane>

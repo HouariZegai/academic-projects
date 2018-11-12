@@ -6,11 +6,12 @@ import com.kmpalgorithm.java.searchengine.KMP;
 import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Paint;
 import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
@@ -26,7 +27,7 @@ import java.util.ResourceBundle;
 public class KMPController implements Initializable {
 
     @FXML
-    private VBox root;
+    private StackPane root;
     @FXML
     private JFXTextArea areaInput;
     @FXML
@@ -41,11 +42,18 @@ public class KMPController implements Initializable {
     private TextFlow fieldResult;
     // Toast Error Msg
     private JFXSnackbar toastMsg;
+    // For show IndexTable View
+    public static JFXDialog dialogFoundIndex;
+
+    // Founded indexs used in TableIndex GUI
+    public static List<Integer> foundIndex;
+    //
+    public static String inputText;
+    public static String pattern;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         toastMsg = new JFXSnackbar(root);
-
         areaInput.setOnKeyTyped(e -> {onRemoveOutput();});
         fieldPattern.setOnKeyTyped(e -> {onRemoveOutput();});
         toggleCaseSensitive.setOnAction(e -> onRemoveOutput());
@@ -93,7 +101,9 @@ public class KMPController implements Initializable {
         }
 
         KMP kmp = new KMP(areaInput.getText(), toggleCaseSensitive.isSelected());
-        List<Integer> foundIndex = kmp.searchAndGetIndex(fieldPattern.getText());
+        this.foundIndex = kmp.searchAndGetIndex(fieldPattern.getText());
+        this.pattern = fieldPattern.getText();
+        this.inputText = areaInput.getText();
 
         Label lblFound = (Label) boxResult.getChildren().get(0);
         MaterialDesignIconView iconEmojyFound = (MaterialDesignIconView) lblFound.getGraphic();
@@ -119,7 +129,14 @@ public class KMPController implements Initializable {
 
     @FXML
     private void onLinkTimes() {
-
+        VBox foundIndexView = null;
+        try {
+            foundIndexView = FXMLLoader.load(getClass().getResource("/com/kmpalgorithm/resources/views/TableIndex.fxml"));
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+        }
+        dialogFoundIndex = new JFXDialog(root, foundIndexView, JFXDialog.DialogTransition.CENTER);
+        dialogFoundIndex.show();
     }
 
     private void onRemoveOutput() { // remove output
@@ -161,7 +178,8 @@ public class KMPController implements Initializable {
     private void addLabelFound(String txt) {
         Label label = new Label(txt);
         label.setStyle("-fx-font-size: 16px;" +
-                "-fx-background-color: #F00");
+                "-fx-background-color: #D00;" +
+                "-fx-text-fill: #FFF");
 
         fieldResult.getChildren().add(label);
     }

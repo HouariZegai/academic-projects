@@ -101,6 +101,7 @@ public class KMP {
         }
 
         List<Integer> foundIndex = new LinkedList<>();
+        this.prefixArrayOfPattern = computePrefixArray(patternSearch);
 
         int indexOfText = 0; // Index of Text table
         int indexOfPattern = 0; // Index of Pattern table
