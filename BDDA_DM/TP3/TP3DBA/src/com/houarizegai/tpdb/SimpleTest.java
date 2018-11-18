@@ -25,7 +25,6 @@ public class SimpleTest {
     
     public static void main(String[] args) {
         SimpleTest simpleTest = new SimpleTest();
-        
         int number = 4;
         System.out.println("Factorial of " + number + " is: " + simpleTest.getFactorial(number));
     }
