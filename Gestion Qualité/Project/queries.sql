@@ -1,303 +1,387 @@
--- Create Database
+-- Delete Database Gestion Commercial if exists
+DROP DATABASE IF EXISTS gestionCommercialDb;
 
-DROP DATABASE gestion_commercial_db IF EXISTS;
+-- Create database Gestion Commercial
+CREATE DATABASE gestionCommercialDb;
 
--- Create database
-CREATE DATABASE gestion_commercial_db;
-
--- Branché vers la base de donnée
-USE gestion_commercial_db;
+-- Branchée vers la base de donnée Gestion Commercial
+USE gestionCommercialDb;
 
 -- Structure of table Socièté
 CREATE TABLE Societe (
-	num_societe INT PRIMARY KEY,
-	adresse VARCHAR(255),
-	code_postal VARCHAR(5),
-	ville VARCHAR(80),
-	telephone VARCHAR(20),
-	fax VARCHAR(10),
-	email VARCHAR(80),
-	logo VARCHAR(255)
+	NomSociete VARCHAR(100) PRIMARY KEY,
+	Adresse VARCHAR(150),
+	CodePostal VARCHAR(5),
+	Ville VARCHAR(40),
+	Telephone VARCHAR(20),
+	Fax VARCHAR(20),
+	Email VARCHAR(40),
+	Logo BLOB
 );
 
 -- Structure of table Login
 CREATE TABLE Login (
-	id_login INT PRIMARY KEY,
-	nom_utilisateur VARCHAR(250) NOT NULL,
-	mot_de_passe VARCHAR(250) NOT NULL
+	IDLogin INT(8) AUTO_INCREMENT PRIMARY KEY,
+	NomUtilisateur VARCHAR(40),
+	MotDePasse VARCHAR(40)
 );
 
 -- Structure of table Cedex
 CREATE TABLE Cedex (
-	id_cedex INT PRIMARY KEY,
-	code_postal VARCHAR(20) NOT NULL,
-	ville VARCHAR(250) NOT NULL
+	IDCedex INT(8) AUTO_INCREMENT PRIMARY KEY,
+	CodePostal VARCHAR(5),
+	Ville VARCHAR(40)
 );
 
--- Structure of table ActionPossible
+-- Structure of table Action Possible
 CREATE TABLE ActionPossible (
-	id_action_possible INT PRIMARY KEY,
-	lib_action VARCHAR(40)
+	IDActionPossible INT(8) AUTO_INCREMENT PRIMARY KEY,
+	LibAction VARCHAR(40)
 );
 
--- Structure of table ActionRealisee
+-- Structure of table Action Réalisee
 CREATE TABLE ActionRealisee (
-	id_action_realise INT PRIMARY KEY,
-	id_action_possible INT,
-	num_client INT,
-	login VARCHAR(50),
-	date_action DATE,
-	cle_ordre VARCHAR(16)
+	IDActionRealise INT(8) AUTO_INCREMENT PRIMARY KEY,
+	IDActionPossible INT(8),
+	NumClient INT(8),
+	Login VARCHAR(50) DEFAULT 0,
+	DateAction DATE,
+	CleOrdre VARCHAR(16),
+	FOREIGN KEY (IDActionPossible) REFERENCES ActionPossible(IDActionPossible),
+	FOREIGN KEY (NumClient) REFERENCES Client(NumClient)
 );
 
--- Structure of table LigneFac
+-- Structure of table Ligne Facture
 CREATE TABLE LigneFac (
-	id_ligne_fac INT PRIMARY KEY,
-	num_facture INT,
-	reference VARCHAR(250),
-	lib_prod VARCHAR(250),
-	quantite INT
+	IDLigneFac INT(8) AUTO_INCREMENT PRIMARY KEY,
+	NumFacture INT(8),
+	Reference VARCHAR(20),
+	LibProd VARCHAR(40),
+	Quantite INT(4),
+	PrixVente DOUBLE,
+	Remise DOUBLE,
+	TauxTva DOUBLE,
+	IDLigneCde DOUBLE,
+	OrdreAffichage INT(2) DEFAULT 0,
+	FOREIGN KEY (Reference) REFERENCES Produit (Reference),
+	FOREIGN KEY (NumFacture) REFERENCES Facture (NumFacture),
+	FOREIGN KEY (IDLigneCde) REFERENCES LigneCde (IDLigneCde)
 );
 
 -- Structure of table Avoir
 CREATE TABLE Avoir (
-	num_avoir INT PRIMARY KEY,
-	date_avoir DATE,
-	num_client INT,
-	id_adresse_facturation INT,
-	id_mode_reglement INT,
-	total_ht REAL,
-	total_tva REAL,
-	total_ttc REAL,
-	utilise BOOLEAN,
-	saisi_par VARCHAR(40),
+	NumAvoir INT(8) AUTO_INCREMENT PRIMARY KEY,
+	DateAvoir DATE,
+	NumClient INT(8),
+	IDAdresseFacturation INT(8),
+	IDModeReglement INT(8),
+	TotalHt DOUBLE,
+	TotalTva DOUBLE,
+	TotalTtc DOUBLE,
+	Utilise BOOLEAN,
+	SaisiPar VARCHAR(40),
+	SaisiLe DATE,
+	Observations TEXT,
+	FOREIGN KEY (NumClient) REFERENCES Client (NumClient)
 );
 
 -- Structure of table Client
 CREATE TABLE Client (
-	num_client INT PRIMARY KEY,
-	societe VARCHAR(255),
-	civilite VARCHAR(255),
-	nom_client VARCHAR(255),
-	prenom VARCHAR(255),
-	adresse VARCHAR(255),
-	code_postal VARCHAR(255),
-	ville VARCHAR(255),
-	pays VARCHAR(255),
-	telephone VARCHAR(20),
-	mobile VARCHAR(20),
-	fax VARCHAR(20),
-	email VARCHAR(255),
-	type INT,
-	livre_meme_adresse INT,
-	facture_meme_adresse INT,
-	exempt_tva INT,
-	saisi_par VARCHAR(255),
-	saisi_le DATE,
-	auteur_modif VARCHAR(255),
-	date_modif DATE
+	NumClient INT(8) AUTO_INCREMENT PRIMARY KEY,
+	Societe VARCHAR(40),
+	Civilite VARCHAR(5),
+	NomClient VARCHAR(40),
+	Prenom VARCHAR(50),
+	Adresse VARCHAR(150),
+	CodePostal VARCHAR(5),
+	Ville VARCHAR(40),
+	Pays VARCHAR(40),
+	Telephone VARCHAR(20),
+	Mobile VARCHAR(20),
+	Fax VARCHAR(20),
+	Email VARCHAR(40),
+	Type INT(2) DEFAULT 0,
+	LivreMemeAdresse BOOLEAN DEFAULT 0,
+	FactureMemeAdresse  BOOLEAN DEFAULT 0,
+	ExemptTva  BOOLEAN DEFAULT 0,
+	SaisiPar VARCHAR(40),
+	SaisiLe DATE,
+	AuteurModif VARCHAR(40),
+	DateModif DATE,
+	Observations TEXT,
+	FOREIGN KEY (NumClient) REFERENCES Client (NumClient)
 );
 
--- Structure of table AdrLivraison
-CREATE TABLE AdrLivraison (
-	id_adresse_livraison INT PRIMARY KEY,
-	num_client INT,
-	civilite VARCHAR(5),
-	contact VARCHAR(40),
-	adresse VARCHAR(150),
-	code_postal VARCHAR(5),
-	ville VARCHAR(40),
-	pays VARCHAR(40),
-	telephone VARCHAR(20),
-	mobile VARCHAR(20),
-	fax VARCHAR(20),
-	email VARCHAR(40),
-	observation TEXT
+-- Structure of table Adresse Livraison
+CREATE TABLE Adr_Livraison (
+	IDAdresseLivraison INT(8) AUTO_INCREMENT PRIMARY KEY,
+	NumClient INT(8),
+	Civilite VARCHAR(5),
+	Contact VARCHAR(40),
+	Adresse VARCHAR(150),
+	CodePostal VARCHAR(5),
+	Ville VARCHAR(40),
+	Pays VARCHAR(40),
+	Telephone VARCHAR(20),
+	Mobile VARCHAR(20),
+	Fax VARCHAR(20),
+	Email VARCHAR(40),
+	Observations TEXT,
+  	FOREIGN KEY (NumClient) REFERENCES Client (NumClient)
 );
 
 -- Structure of table Devis
 CREATE table Devis (
-	id_devis INT PRIMARY KEY,
-	date_devis DATE,
-	num_client INT,
-	total_ht REAL
-	total_tva REAL,
-	total_ttc REAL,
-	saisi_par VARCHAR(255),
-	saisi_le DATE,
-	observation VARCHAR(255)
+	IDDevis INT(8) AUTO_INCREMENT PRIMARY KEY,
+	DateDevis DATE,
+	NumClient INT(8),
+	TotalHt DOUBLE,
+	TotalTva DOUBLE,
+	TotalTtc DOUBLE,
+	SaisiPar VARCHAR(40),
+	SaisiLe DATE,
+	Observations TEXT,
+  	FOREIGN KEY (NumClient) REFERENCES Client (NumClient)
 );
 
 -- Structure of table Adresse Facturation
-CREATE TABLE AdrFacturation (
-	id_adresse_facturation INT PRIMARY KEY,
-	num_client INT,
-	civilite VARCHAR(5),
-	contact VARCHAR(40),
-	adresse VARCHAR(150),
-	code_postal VARCHAR(5),
-	ville VARCHAR(40),
-	pays VARCHAR(40),
-	telephone VARCHAR(20),
-	mobile VARCHAR(20),
-	fax VARCHAR(20),
-	email VARCHAR(40)
-	observation TEXT
+CREATE TABLE Adr_Facturation (
+	IDAdresseFacturation INT(8) AUTO_INCREMENT PRIMARY KEY,
+	NumClient INT(8),
+	Civilite VARCHAR(5),
+	Contact VARCHAR(40),
+	Adresse VARCqHAR(150),
+	CodePostal VARCHAR(5),
+	Ville VARCHAR(40),
+	Pays VARCHAR(40),
+	Telephone VARCHAR(20),
+	Mobile VARCHAR(20),
+	Fax VARCHAR(20),
+	Email VARCHAR(40),
+	Observations TEXT,
+  	FOREIGN KEY (NumClient) REFERENCES Client (NumClient)
 );
 
 -- Structure of table Commande
 CREATE TABLE Commande (
-	num_commande INT PRIMARY KEY,
-	date_commande DATE,
-	num_client INT,
-	id_adresse_livraison INT,
-	id_mode_livraison INT,
-	id_adresse_facturation INT,
-	id_mode_reglement INT,
-	total_ht REAL
+	NumCommande INT(8) AUTO_INCREMENT PRIMARY KEY,
+	DateCommande DATE,
+	NumClient INT(8),
+	IDAdresseLivraison INT(8),
+	IDModeLivraison INT(8),
+	IDAdresseFacturation INT(8),
+	IDModeReglement INT(8),
+	TotalHt DOUBLE,
+	TotalTva DOUBLE,
+	TotalFraisPort DOUBLE,
+	TotalTtc DOUBLE,
+	EtatCommande INT(2),
+	SaisiPar VARCHAR(40),
+	SaisiLe DATE,
+	Observations TEXT,
+   	FOREIGN KEY (NumClient) REFERENCES Client (NumClient),
+	FOREIGN KEY (IDModeReglement) REFERENCES ModeReglement (IDModeReglement),
+	FOREIGN KEY (IDAdresseFacturation) REFERENCES Adr_Facturation (IDAdresseFacturation),
+  	FOREIGN KEY (IDAdresseLivraison) REFERENCES Adr_Livraison (IDAdresseLivraison)
 );
 
--- Structure of table LigneCde
+-- Structure of table Ligne Commande
 CREATE TABLE LigneCde (
-	id_ligne_cde INT PRIMARY KEY,
-	num_commande INT,
-	reference VARCHAR(255),
-	lib_prod VARCHAR(255),
-	quantite INT
+	IDLigneCde INT(8) PRIMARY KEY,
+	NumCommande INT(8),
+	Reference VARCHAR(20),
+	LibProd VARCHAR(40),
+	Quantite INT(4),
+	PrixVente DOUBLE DEFAULT 0.000000,
+	Remise DOUBLE,
+	TauxTva DOUBLE,
+	Livre BOOLEAN,
+	Total DOUBLE,
+	OrdreAffichage INT(2),
+	CleNumCommandeOrdreAffi DOUBLE(10),
+	OptimCleCompOrdreNumCo DOUBLE(10),
+	FOREIGN KEY (TauxTVA) REFERENCES TVA (TauxTVA),
+	FOREIGN KEY (Reference) REFERENCES Produit (Reference),
+	FOREIGN KEY (NumCommande) REFERENCES Commande (NumCommande)
 );
 
--- Structure of table ModeReglement
+-- Structure of table Mode Règlement
 CREATE TABLE ModeReglement (
-	id_mode_reglement INT PRIMARY KEY,
-	lib_mode_reglement VARCHAR(255)
+	IDModeReglement INT(8) AUTO_INCREMENT PRIMARY KEY,
+	LibModeReglement VARCHAR(40)
 );
 
--- Structure of table LigneAvoir
+-- Structure of table Ligne Avoir
 CREATE TABLE LigneAvoir (
-	id_ligne_avoir INT PRIMARY KEY,
-	num_avoir INT,
-	reference VARCHAR(255),
-	lib_prod VARCHAR(255),
-	quantite INT
+	IDLigneAvoir INT(8) PRIMARY KEY,
+	NumAvoir INT(8),
+	Reference VARCHAR(255),
+	LibProd VARCHAR(255),
+	Quantite INT(4),
+	Prix DOUBLE,
+	TauxTva DOUBLE,
+	IDLigneFac INT(8),
+	FOREIGN KEY (Reference) REFERENCES Produit (Reference),
+	FOREIGN KEY (NumAvoir) REFERENCES Avoir (NumAvoir),
+	FOREIGN KEY (IDLigneFac) REFERENCES LigneFac (IDLigneFac)
 );
 
 -- Structure of table Stock
 CREATE TABLE Stock (
-	reference VARCHAR PRIMARY KEY,
-	qte_en_stock INT,
-	qte_stock_virtuel INT,
-	auteur_modif VARCHAR(255),
-	date_modif DATE
+	Reference VARCHAR(20) PRIMARY KEY,
+	QteEnStock INT(4),
+	QteStockVirtuel INT(4),
+	AuteurModif VARCHAR(40),
+	DateModif DATE
 );
 
--- Structure of table ModeLivraison
+-- Structure of table Mode Livraison
 CREATE TABLE ModeLivraison (
-	id_mode_livraison INT PRIMARY KEY,
-	lib_mode_reglement VARCHAR(255)
+	IDModeLivraison INT(8) AUTO_INCREMENT PRIMARY KEY,
+	LibModeReglement VARCHAR(40)
 );
 
 -- Structure of table Produit
 CREATE TABLE Produit (
-	reference VARCHAR(255) PRIMARY KEY,
-	gen_code VARCHAR(255),
-	code_barre VARCHAR(255),
-	lib_prod VARCHAR(255),
-	description VARCHAR(255),
-	prix_ht REAL,
-	qte_reappro VARCHAR(255),
-	qte_mini VARCHAR(255)
-	taux_tva .,
-	photo VARCHAR(255),
-	num_fournisseur INT
+	Reference VARCHAR(20) PRIMARY KEY,
+	genCode VARCHAR(40),
+	codeBarre VARCHAR(40),
+	LibProd VARCHAR(40),
+	description TEXT,
+	PrixHt DOUBLE DEFAULT 0.000000,
+	QteReappro INT(4) DEFAULT 0,
+	QteMini INT(4) DEFAULT 0,
+	TauxTva DOUBLE DEFAULT 0.000000,
+	photo BLOB,
+	NumFournisseur INT(8) DEFAULT 0,
+	plusAuCatalogue BOOLEAN DEFAULT 0,
+	SaisiPar VARCHAR(40),
+	SaisiLe DATE,
+	CodeFamille VARCHAR(40),
+	CodePort VARCHAR(20),
+	FOREIGN KEY (TauxTVA) REFERENCES TVA (TauxTVA),
+	FOREIGN KEY (CodePort) REFERENCES FraisPort (CodePort),
+	FOREIGN KEY (CodeFamille) REFERENCES Famille (CodeFamille),
+	FOREIGN KEY (NumFournisseur) REFERENCES Fournisseur (NumFournisseur)
 );
 
--- Structure of table SortieStock
+-- Structure of table Sortie Stock
 CREATE TABLE SortieStock (
-	id_sortie INT PRIMARY KEY,
-	reference VARCHAR(255),
-	quantite INT,
-	date_sortie DATE,
-	modif VARCHAR(255)
+	IDSortie INT(8) AUTO_INCREMENT PRIMARY KEY,
+	Reference VARCHAR(20),
+	Quantite INT(4),
+	DateSortie DATE,
+	Modif VARCHAR(40),
+	SaisiPar VARCHAR(40),
+	SaisiLe DATE,
+	Observations TEXT,
+	FOREIGN KEY (Reference) REFERENCES Produit (Reference)
 );
 
 -- Structure of table Famille
 CREATE TABLE Famille (
-	code_famille INT PRIMARY KEY,
-	libelle VARCHAR(255)
+	CodeFamille VARCHAR(40) PRIMARY KEY,
+	Libelle VARCHAR(50)
 );
 
 -- Structure of table Frais Port
 CREATE table FraisPort (
-	code_port VARCHAR(255) PRIMARY KEY,
-	lib_frais_port VARCHAR(255),
-	montant REAL
+	CodePort VARCHAR(20) PRIMARY KEY,
+	LibFraisPort VARCHAR(40),
+	Montant DOUBLE
 );
 
 -- Structure of table TVA
 CREATE TABLE TVA (
-	taux_tva .
+	TauxTva DOUBLE PRIMARY KEY
 );
 
 -- Structure of table Entrée Stock
 CREATE TABLE EntreeStock (
-	id_entree INT PRIMARY key,
-	date_appro DATE,
-	reference VARCHAR(255),
-	quantite INT,
-	prix_achat .,
-	num_fournisseur INT,
-	saisi_par VARCHAR(255),
-	saisi_le DATE,
-	observation VARCHAR(255)
+	IDEntree INT(8) AUTO_INCREMENT PRIMARY key,
+	DateAppro DATE,
+	Reference VARCHAR(20),
+	Quantite INT(4),
+	PrixAchat DOUBLE,
+	NumFournisseur INT(8),
+	SaisiPar VARCHAR(40),
+	SaisiLe DATE,
+	Observations TEXT,
+	FOREIGN KEY (NumFournisseur) REFERENCES Fournisseur (NumFournisseur),
+	FOREIGN KEY (Reference) REFERENCES Produit (Reference)
 );
 
 -- Structure of table Fournisseur
 CREATE TABLE Fournisseur (
-	num_fournisseur INT PRIMARY KEY,
-	societe VARCHAR(255),
-	civilite VARCHAR(255),
-	nom VARCHAR(255),
-	prenom VARCHAR(255),
-	adresse VARCHAR(255),
-	code_postal VARCHAR(5),
-	ville VARCHAR(255),
-	pays VARCHAR(255),
-	telephone VARCHAR(20)
+	NumFournisseur INT(8) AUTO_INCREMENT PRIMARY KEY,
+	Societe VARCHAR(40),
+	Civilite VARCHAR(5),
+	Nom VARCHAR(40),
+	Prenom VARCHAR(50),
+	Adresse VARCHAR(150),
+	CodePostal VARCHAR(5),
+	Ville VARCHAR(40),
+	Pays VARCHAR(40),
+	Telephone VARCHAR(20),
+	Mobile VARCHAR(20),
+	Fax VARCHAR(20),
+	Email VARCHAR(40),
+	Observations TEXT
 );
 
--- Structure of table LigneDevis
+-- Structure of table Ligne Devis
 CREATE TABLE LigneDevis (
-	id_ligne_devis INT PRIMARY KEY,
-	reference VARCHAR(255),
-	lib_prod VARCHAR(255)
+	IDLigneDevis INT(4) PRIMARY KEY,
+	Reference VARCHAR(20),
+	LibProd VARCHAR(40),
+	Quantite INT(4),
+	Remise DOUBLE,
+	TauxTva DOUBLE,
+	IDDevis INT(8),
+	PrixVente DOUBLE DEFAULT 0,
+	OrdreAffichage INT(2),
+	FOREIGN KEY (Reference) REFERENCES Produit (Reference),
+	FOREIGN KEY (TauxTVA) REFERENCES TVA (TauxTVA),
+	FOREIGN KEY (IDDevis) REFERENCES Devis (IDDevis)
 );
 
--- Structure of table Reglement
+-- Structure of table Règlement
 CREATE TABLE Reglement (
-	id_reglement INT PRIMARY KEY,
-	date_reglement DATE,
-	id_mode_reglement INT,
-	num_facture INT,
-	saisi_par VARCHAR(255)
+	IDReglement INT(8) AUTO_INCREMENT PRIMARY KEY,
+	DateReglement DATE,
+	IDModeReglement INT(8),
+	NumFacture INT(8), 
+	SaisiPar VARCHAR(40),
+	SaisiLe DATE,
+	Observations TEXT
 );
 
 -- Structure of table Facture
 CREATE TABLE Facture (
-	num_facture INT PRIMARY KEY,
-	date_facture DATE,
-	num_client INT,
-	id_adresse_facturation INT,
-	id_mode_reglement INT,
-	total_ht REAL,
-	total_tva REAL,
-	total_frais_port REAL,
-	total_ttc REAL,
-	remise REAL
+	NumFacture INT(8) AUTO_INCREMENT PRIMARY KEY,
+	DateFacture DATE AUTO_INCREMENT,
+	NumClient INT(8) AUTO_INCREMENT,
+	IDAdresseFacturation INT(8),
+	IDModeReglement INT(8),
+	TotalHt DOUBLE,
+	TotalTva DOUBLE,
+	TotalFraisPort DOUBLE,
+	TotalTtc DOUBLE,
+	Remise DOUBLE,
+	Acquittee BOOLEAN,
+	SaisiPar VARCHAR(40),
+	SaisiLe DATE,
+	Observations TEXT,
+	NumCommande INT(8),
+	FOREIGN KEY (NumClient) REFERENCES Client (NumClient),
+	FOREIGN KEY (IDModeReglement) REFERENCES ModeReglement (IDModeReglement),
+	FOREIGN KEY (IDAdresseFacturation) REFERENCES Adr_Facturation (IDAdresseFacturation)
 );
 
 -- Structure of table Paramètre
 CREATE TABLE Parametre (
-	id_parametre INT PRIMARY KEY,
-	nom_parametre VARCHAR(255),
-	valuer VARCHAR(255)
+	IDParametre INT(4) AUTO_INCREMENT PRIMARY KEY,
+	NomParametre VARCHAR(30),
+	Valuer TEXT
 );
+
