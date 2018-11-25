@@ -355,7 +355,7 @@ CREATE TABLE LigneDevis (
 
 -- -----------------------------------------------
 --
--- Add constaint foreign key to tables
+-- Add constraint foreign key to tables
 --
 
 ALTER TABLE ActionRealisee ADD CONSTRAINT fk_ar FOREIGN KEY (IDActionPossible) REFERENCES ActionPossible (IDActionPossible);
