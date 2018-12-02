@@ -38,7 +38,7 @@ VALUES 	('Mle', 'Ghania', 'DIAF AMROUNI', '1955-12-31', '43 RUE ABDERRAHMANE SBA
 -- ============================================================
 -- Create table Employe
 
-CREATE TABLE Employe(
+CREATE TABLE Employe (
 	num_employe SERIAL PRIMARY KEY,
 	nom_employe VARCHAR(25) NOT NULL,
 	prenom_employe VARCHAR(25) NOT NULL,
