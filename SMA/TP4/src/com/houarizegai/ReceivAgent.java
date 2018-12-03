@@ -13,24 +13,28 @@ import java.io.IOException;
 
 public class ReceivAgent extends Agent {
 
-    public JLabel Etiq, Etiq2;
+    public JLabel lblEtiq, lblEtiq2;
 
     class MaFenetre extends JFrame implements ActionListener {
-        private JButton btnCalc;
+        private JButton btnKill;
 
         public MaFenetre() {
-            setTitle("Agent Bettaj");
-            setBounds(100, 100, 450, 200);
+            lblEtiq = new JLabel("Hallo World! My name is : " + getLocalName());
+            lblEtiq2 = new JLabel("j'attends la requête de l'agent ALI");
+            btnKill = new JButton("Kill");
+            
+            btnKill.addActionListener(this);
+            
             Container contenu = getContentPane();
             contenu.setLayout(new FlowLayout());
-
-            Etiq = new JLabel("Hallo World! My name is : " + getLocalName());
-            Etiq2 = new JLabel("j'attends la requête de l'agent ALI");
-            contenu.add(Etiq);
-            contenu.add(Etiq2);
-            btnCalc = new JButton("Kill");
-            contenu.add(btnCalc);
-            btnCalc.addActionListener(this);
+            
+            contenu.add(lblEtiq);
+            contenu.add(lblEtiq2);
+            contenu.add(btnKill);
+            
+            setTitle("Agent Bettaj");
+            setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            setBounds(100, 100, 450, 200);
 
         }
 
@@ -38,7 +42,7 @@ public class ReceivAgent extends Agent {
         //on va tester ka source de levenemment e
         @Override
         public void actionPerformed(ActionEvent e) {
-            if (e.getSource() == btnCalc) {
+            if (e.getSource() == btnKill) {
                 doDelete();
                 this.dispose();
             }
@@ -61,7 +65,7 @@ public class ReceivAgent extends Agent {
 
             if (msg != null) {
 
-                Etiq.setText(msg.getContent());
+                lblEtiq.setText(msg.getContent());
                 System.out.println("requete reçue:" + msg.getContent());
                 new Extraction(msg.getContent());
                 //envoi du nombre d'enregistrements

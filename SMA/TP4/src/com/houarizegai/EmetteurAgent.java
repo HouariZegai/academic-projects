@@ -1,5 +1,6 @@
 package com.houarizegai;
 
+
 import jade.core.AID;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
@@ -14,33 +15,37 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-class Emetteur extends Agent {
+public class EmetteurAgent extends Agent {
 
-    public JLabel Etiq;
-    public JTextField text;
+    public JLabel lblEtiq;
+    public JTextField fieldMsg;
 
     class MaFenetre extends JFrame implements ActionListener {
 
-        private JButton btnCalc;
+        private JButton btnSend;
 
         public MaFenetre() {
-            setTitle("Agent Expéditeur");
-            setSize(450, 150);
+            lblEtiq = new JLabel("Hello World! My name is " + getLocalName());
+            fieldMsg = new JTextField(30);
+            btnSend = new JButton("Envoyer");
+
+            btnSend.addActionListener(this);
+
             Container contenu = getContentPane();
             contenu.setLayout(new FlowLayout());
 
-            Etiq = new JLabel("Hello World! My name is " + getLocalName());
-            contenu.add(Etiq);
-            btnCalc = new JButton("Envoyer");
-            contenu.add(btnCalc);
-            btnCalc.addActionListener(this);
-            text = new JTextField(30);
-            contenu.add(text);
+            contenu.add(lblEtiq);
+            contenu.add(fieldMsg);
+            contenu.add(btnSend);
+
+            setTitle("Agent Expéditeur (Agent Ali)");
+            setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            setSize(450, 150);
         }
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            if (e.getSource().equals(btnCalc)) {
+            if (e.getSource().equals(btnSend)) {
                 // Activate Agent Emetteur
                 doWake();
                 // Activate Agent ReceivAgent
@@ -70,7 +75,7 @@ class Emetteur extends Agent {
             doWait();
 
             ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
-            msg.setContent(text.getText());
+            msg.setContent(fieldMsg.getText());
 
             AID receiver = new AID("Bettaj", AID.ISLOCALNAME);//preciser le recepteur
             msg.addReceiver(receiver);
@@ -96,7 +101,7 @@ class Emetteur extends Agent {
                         } catch (UnreadableException e) {
                             e.printStackTrace();
                         }
-                        System.out.println("Enregistrement: " + (nbe) + "/ " + p);
+                        System.out.println("Enregistrement " + nbe + " : " + p);
                         nbe--;
                     } else block();
                 }
