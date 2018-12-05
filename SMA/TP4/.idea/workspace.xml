@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="550d1655-9e08-46a8-8eb8-3c0680277dee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Architecture SGBD/Project/presentation/Presentation-projet-SQLite.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Architecture SGBD/Project/presentation/Presentation-projet-SQLite.pptx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP4/com/houarizegai/Emetteur$EnvoiMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP4/com/houarizegai/Emetteur$MaFenetre.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP4/com/houarizegai/Emetteur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP4/com/houarizegai/EmetteurAgent$EnvoiMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP4/com/houarizegai/EmetteurAgent$EnvoiMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP4/com/houarizegai/EmetteurAgent$MaFenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP4/com/houarizegai/EmetteurAgent$MaFenetre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP4/com/houarizegai/EmetteurAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP4/com/houarizegai/EmetteurAgent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP4/com/houarizegai/ReceivAgent$MaFenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP4/com/houarizegai/ReceivAgent$MaFenetre.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP4/com/houarizegai/ReceivAgent$RecoiMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP4/com/houarizegai/ReceivAgent$RecoiMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP4/com/houarizegai/ReceivAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP4/com/houarizegai/ReceivAgent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/houarizegai/Emetteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/houarizegai/EmetteurAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/houarizegai/EmetteurAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/houarizegai/EmetteurAgent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/houarizegai/ReceivAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/houarizegai/ReceivAgent.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,53 +23,50 @@
     <session id="-1447512902">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.77" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.89" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="3" />
-          <entry key="java" value="19" />
+          <entry key="java" value="25" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="19" />
+          <entry key="JAVA" value="25" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3021" />
+          <entry key="java" value="3229" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3021" />
+          <entry key="JAVA" value="3229" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/houarizegai/EmetteurAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-              <folding>
-                <element signature="class#MaFenetre#0;class#EmetteurAgent#0" />
-                <element signature="method#MaFenetre#0;class#MaFenetre#0;class#EmetteurAgent#0" />
-                <element signature="method#actionPerformed#0;class#MaFenetre#0;class#EmetteurAgent#0" />
-                <element signature="class#EnvoiMessage#0;class#EmetteurAgent#0" />
-                <element signature="method#action#0;class#EnvoiMessage#0;class#EmetteurAgent#0" />
-              </folding>
+            <state relative-caret-position="100">
+              <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -77,15 +74,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/houarizegai/ReceivAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="100">
+              <caret line="82" column="62" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/houarizegai/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
-                <element signature="class#MaFenetre#0;class#ReceivAgent#0" />
-                <element signature="method#MaFenetre#0;class#MaFenetre#0;class#ReceivAgent#0" />
-                <element signature="method#actionPerformed#0;class#MaFenetre#0;class#ReceivAgent#0" />
-                <element signature="class#RecoiMessage#0;class#ReceivAgent#0" />
-                <element signature="method#action#0;class#RecoiMessage#0;class#ReceivAgent#0" />
+                <element signature="e#370#371#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/houarizegai/Extraction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -105,11 +117,17 @@
       <find>Etiq2</find>
       <find>lbllblEtiq2</find>
       <find>Etiq</find>
+      <find>Houari</find>
+      <find>Bettaj</find>
+      <find>Betta</find>
+      <find>Ali</find>
     </findStrings>
     <replaceStrings>
       <replace>btnKill</replace>
       <replace>lblEtiq2</replace>
       <replace>lblEtiq</replace>
+      <replace>Houari</replace>
+      <replace>Mohammed</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -122,9 +140,10 @@
         <option value="$PROJECT_DIR$/src/com/houarizegai/re.java" />
         <option value="$PROJECT_DIR$/src/com/houarizegai/Person.java" />
         <option value="$PROJECT_DIR$/src/com/houarizegai/Extraction.java" />
-        <option value="$PROJECT_DIR$/src/com/houarizegai/ReceivAgent.java" />
         <option value="$PROJECT_DIR$/src/com/houarizegai/Emetteur.java" />
         <option value="$PROJECT_DIR$/src/com/houarizegai/ComAgent.java" />
+        <option value="$PROJECT_DIR$/src/com/houarizegai/ReceivAgentAlone.java" />
+        <option value="$PROJECT_DIR$/src/com/houarizegai/ReceivAgent.java" />
         <option value="$PROJECT_DIR$/src/com/houarizegai/EmetteurAgent.java" />
       </list>
     </option>
@@ -136,10 +155,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="422" />
     <option name="width" value="1386" />
-    <option name="height" value="788" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -149,47 +167,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="TP4" type="b2602c69:ProjectViewProjectNode" />
               <item name="TP4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP4" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP4" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP4" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="TP4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP4" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="TP4" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP4" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP4" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="TP4" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="houarizegai" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TP4" type="b2602c69:ProjectViewProjectNode" />
@@ -210,14 +195,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543824754809" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543824914891" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Jars/DB/mysql-connector-java-5.1.42-bin.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -227,6 +210,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.houarizegai" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Learn\Master1\M1 2018-2019\TP Master1\SMA\TP4\src\com\houarizegai" />
     </key>
@@ -243,11 +229,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TP4SMA">
+    <configuration name="TP4AgentAlone" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jade.Boot" />
+      <module name="TP4" />
+      <option name="PROGRAM_PARAMETERS" value="-gui Bettaj:ReceivAgentAlone" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TP4SMA" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="jade.Boot" />
       <module name="TP4" />
-      <option name="PROGRAM_PARAMETERS" value="-gui Ali:com.houarizegai.EmetteurAgent;Bettaj:com.houarizegai.ReceivAgent" />
+      <option name="PROGRAM_PARAMETERS" value="-gui Mohammed:com.houarizegai.EmetteurAgent;Houari:com.houarizegai.ReceivAgent" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -259,6 +253,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.TP4AgentAlone" />
+      <item itemvalue="Application.TP4SMA" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -272,18 +270,22 @@
       <updated>1543309243134</updated>
       <workItem from="1543309245008" duration="10792000" />
       <workItem from="1543395124769" duration="218000" />
-      <workItem from="1543821139570" duration="3517000" />
+      <workItem from="1543821139570" duration="3756000" />
+      <workItem from="1543843217939" duration="579000" />
+      <workItem from="1543860201241" duration="27000" />
+      <workItem from="1543912574179" duration="228000" />
+      <workItem from="1543914678537" duration="3366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14527000" />
+    <option name="totallyTimeSpent" value="18966000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16565809" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17549168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -292,7 +294,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -334,76 +336,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/Person.java">
+    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/ComAgent.java" />
+    <entry file="file://$PROJECT_DIR$/out/production/TP4/com/houarizegai/EmetteurAgent.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="53" column="26" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="26" />
+        <state relative-caret-position="108">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/ComAgent.java">
+    <entry file="file://$PROJECT_DIR$/out/production/TP4/com/houarizegai/ReceivAgent.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/ReceivAgentAlone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="65" column="28" lean-forward="true" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="28" />
+        <state relative-caret-position="468">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/houarizegai/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
-            <element signature="class#MaFenetre#0;class#Emetteur#0" />
-            <element signature="method#MaFenetre#0;class#MaFenetre#0;class#Emetteur#0" />
-            <element signature="method#actionPerformed#0;class#MaFenetre#0;class#Emetteur#0" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/houarizegai/Extraction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/TP4/com/houarizegai/EmetteurAgent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#4176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/TP4/com/houarizegai/ReceivAgent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#3259#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="184">
+          <caret line="41" column="21" lean-forward="true" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/houarizegai/ReceivAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="class#MaFenetre#0;class#ReceivAgent#0" />
-            <element signature="method#MaFenetre#0;class#MaFenetre#0;class#ReceivAgent#0" />
-            <element signature="method#actionPerformed#0;class#MaFenetre#0;class#ReceivAgent#0" />
-            <element signature="class#RecoiMessage#0;class#ReceivAgent#0" />
-            <element signature="method#action#0;class#RecoiMessage#0;class#ReceivAgent#0" />
-          </folding>
+        <state relative-caret-position="100">
+          <caret line="82" column="62" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/houarizegai/EmetteurAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding>
-            <element signature="class#MaFenetre#0;class#EmetteurAgent#0" />
-            <element signature="method#MaFenetre#0;class#MaFenetre#0;class#EmetteurAgent#0" />
-            <element signature="method#actionPerformed#0;class#MaFenetre#0;class#EmetteurAgent#0" />
-            <element signature="class#EnvoiMessage#0;class#EmetteurAgent#0" />
-            <element signature="method#action#0;class#EnvoiMessage#0;class#EmetteurAgent#0" />
-          </folding>
+        <state relative-caret-position="100">
+          <caret line="31" column="27" lean-forward="true" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
         </state>
       </provider>
     </entry>

@@ -1,17 +1,17 @@
 package com.houarizegai;
 
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.ActionListener;
-
 import jade.core.AID;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.lang.acl.ACLMessage;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.IOException;
 
-public class ReceivAgent extends Agent {
+public class ReceivAgentAlone extends Agent {
 
     public JLabel lblEtiq, lblEtiq2;
 
@@ -20,7 +20,7 @@ public class ReceivAgent extends Agent {
 
         public MaFenetre() {
             lblEtiq = new JLabel("Hallo World! My name is : " + getLocalName());
-            lblEtiq2 = new JLabel("j'attends la requête de l'agent Mohammed");
+            lblEtiq2 = new JLabel("j'attends la requête de l'agent ALI");
             btnKill = new JButton("Kill");
             
             btnKill.addActionListener(this);
@@ -32,7 +32,7 @@ public class ReceivAgent extends Agent {
             contenu.add(lblEtiq2);
             contenu.add(btnKill);
             
-            setTitle("Agent Houari");
+            setTitle("Agent Bettaj");
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             setBounds(100, 100, 450, 200);
 
@@ -59,33 +59,35 @@ public class ReceivAgent extends Agent {
     public class RecoiMessage extends CyclicBehaviour {//done est deaj implementer
 
         public void action() {
-            ACLMessage msg; //pas de performative psk on recoit msg en ne envoit pas
-            doWait(5000);
-            msg = receive();//consulte la boite au lettre
+            //ACLMessage msg; //pas de performative psk on recoit msg en ne envoit pas
+            //doWait(5000);
+            //msg = receive();//consulte la boite au lettre
+            String msgs = "SELECT * FROM person";
+            //if (msg != null) {
 
-            if (msg != null) {
-
-                lblEtiq.setText(msg.getContent());
-                System.out.println("requete reçue:" + msg.getContent());
-                new Extraction(msg.getContent());
+                //lblEtiq.setText(msg.getContent());
+                //System.out.println("requete reçue:" + msg.getContent());
+                //new Extraction(msg.getContent());
+                new Extraction(msgs);
                 //envoi du nombre d'enregistrements
-                ACLMessage msg2 = new ACLMessage(ACLMessage.INFORM);
-                msg2.setContent(String.valueOf(Extraction.data.size()));//valueOf pour le rendre string
-                AID receiver = new AID("Mohammed", AID.ISLOCALNAME);
-                msg2.addReceiver(receiver);
-                send(msg2);
+                //ACLMessage msg2 = new ACLMessage(ACLMessage.INFORM);
+                //msg2.setContent(String.valueOf(Extraction.data.size()));//valueOf pour le rendre string
+                //AID receiver = new AID("Ali", AID.ISLOCALNAME);
+                //msg2.addReceiver(receiver);
+                //send(msg2);
                 for (Person person : Extraction.data) {
-                    try {
-                        msg2.setContentObject(person);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                    receiver = new AID("Mohammed", AID.ISLOCALNAME);
-                    msg2.addReceiver(receiver);
-                    send(msg2);
+                    //try {
+                        //msg2.setContentObject(person);
+                        System.out.println(person.getName() + " " + person.getSurname() + " " + person.dateToString(person.getBirthdate()));
+                    //} catch (IOException e) {
+                    //    e.printStackTrace();
+                    //}
+                    //receiver = new AID("Ali", AID.ISLOCALNAME);
+                    //msg2.addReceiver(receiver);
+                    //send(msg2);
                 }
                 doDelete();
-            } else
+            //} else
                 block();
         }
 

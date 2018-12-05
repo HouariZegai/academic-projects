@@ -38,7 +38,7 @@ public class EmetteurAgent extends Agent {
             contenu.add(fieldMsg);
             contenu.add(btnSend);
 
-            setTitle("Agent Expéditeur (Agent Ali)");
+            setTitle("Agent Expéditeur (Agent Mohammed)");
             setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             setSize(450, 150);
         }
@@ -52,7 +52,7 @@ public class EmetteurAgent extends Agent {
                 ContainerController cc = getContainerController();
                 AgentController ac;
                 try {
-                    ac = cc.getAgent("Bettej");
+                    ac = cc.getAgent("Houari");
                     ac.activate();
                 } catch (ControllerException ce) {
                     ce.printStackTrace();
@@ -77,7 +77,7 @@ public class EmetteurAgent extends Agent {
             ACLMessage msg = new ACLMessage(ACLMessage.INFORM);
             msg.setContent(fieldMsg.getText());
 
-            AID receiver = new AID("Bettaj", AID.ISLOCALNAME);//preciser le recepteur
+            AID receiver = new AID("Houari", AID.ISLOCALNAME);//preciser le recepteur
             msg.addReceiver(receiver);
             send(msg);
             System.out.println(" Requête envoyée : " + msg.getContent());
