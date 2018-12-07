@@ -149,7 +149,7 @@ public class KMPController implements Initializable {
         tableHistory.setShowRoot(false);
     }
 
-    private void addToTableHistory(String method, String pattern, long time) {
+    private void addToTableHistory(String method, String pattern, double time) {
 
         listHistory.add(new TableHistory(String.valueOf(++indexTable), method, pattern, String.valueOf(time)));
 
@@ -207,10 +207,13 @@ public class KMPController implements Initializable {
         }
         switch (comboAlgorithmType.getSelectionModel().getSelectedIndex()) {
             case 0 : {
-                long startTime = System.currentTimeMillis();
+                //long startTime = System.currentTimeMillis();
+                long startTime = System.nanoTime();
+
                 KMP kmp = new KMP(areaInput.getText(), toggleCaseSensitive.isSelected());
                 kmp.isFound(fieldPattern.getText());
-                long endTime = System.currentTimeMillis();
+                //long endTime = System.currentTimeMillis();
+                long endTime = System.nanoTime();
 
                 this.foundIndex = kmp.searchAndGetIndex(fieldPattern.getText());
 
@@ -227,8 +230,8 @@ public class KMPController implements Initializable {
                     iconEmojyFound.setFill(Paint.valueOf("#00b248"));
                     linkTimes.setText(foundIndex.size() + " Times");
                     setResultTextFlow(foundIndex);
-                    lblExecutionTime.setText((endTime - startTime) + " ms");
-                    addToTableHistory("KMP", KMPController.pattern, endTime - startTime);
+                    lblExecutionTime.setText((endTime - startTime) / 1000000d + " ms");
+                    addToTableHistory("KMP", KMPController.pattern, (endTime - startTime) / 1000000d);
                 } else {
                     lblFound.setText("Not Found !");
                     lblFound.setTextFill(Paint.valueOf("#000"));
