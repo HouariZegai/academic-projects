@@ -54,7 +54,7 @@ public class KMP {
         return result;
     }
 
-    public boolean isFound(String pattern) { // Search if the pattern exist inside the text
+    public int indexOf(String pattern) { // Search if the pattern exist inside the text
         char[] patternSearch;
         char[] textSearch;
 
@@ -84,7 +84,10 @@ public class KMP {
             }
         }
 
-        return indexOfPattern == patternSearch.length;
+        if(indexOfPattern == patternSearch.length)
+            return indexOfText - indexOfPattern;
+        else
+            return -1;
 
     }
 

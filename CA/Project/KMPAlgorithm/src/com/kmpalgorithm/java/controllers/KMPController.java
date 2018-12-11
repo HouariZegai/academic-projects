@@ -211,7 +211,7 @@ public class KMPController implements Initializable {
                 long startTime = System.nanoTime();
 
                 KMP kmp = new KMP(areaInput.getText(), toggleCaseSensitive.isSelected());
-                kmp.isFound(fieldPattern.getText());
+                kmp.indexOf(fieldPattern.getText());
                 //long endTime = System.currentTimeMillis();
                 long endTime = System.nanoTime();
 
@@ -286,6 +286,7 @@ public class KMPController implements Initializable {
                 }
                 addLabelFound(str);
                 str = "";
+                i--;
             } else {
                 str += inputTxt.charAt(i);
             }
