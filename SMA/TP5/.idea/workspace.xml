@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0369326b-75aa-45e8-beb1-b4566afb7749" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Architecture SGBD/Project/presentation/Presentation-projet-SQLite.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Architecture SGBD/Project/presentation/Presentation-projet-SQLite.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TP4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP4/out/production/TP4/com/houarizegai/EmetteurAgent$EnvoiMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TP4/out/production/TP4/com/houarizegai/EmetteurAgent$EnvoiMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP4/out/production/TP4/com/houarizegai/EmetteurAgent$MaFenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TP4/out/production/TP4/com/houarizegai/EmetteurAgent$MaFenetre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP4/out/production/TP4/com/houarizegai/EmetteurAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TP4/out/production/TP4/com/houarizegai/EmetteurAgent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP4/out/production/TP4/com/houarizegai/ReceivAgent$MaFenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TP4/out/production/TP4/com/houarizegai/ReceivAgent$MaFenetre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP4/out/production/TP4/com/houarizegai/ReceivAgent$RecoiMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../TP4/out/production/TP4/com/houarizegai/ReceivAgent$RecoiMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP4/src/com/houarizegai/EmetteurAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TP4/src/com/houarizegai/EmetteurAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TP4/src/com/houarizegai/ReceivAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TP4/src/com/houarizegai/ReceivAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Architecture SGBD/TP3/Rapport TP3 SGBD.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../Architecture SGBD/TP3/Rapport TP3 SGBD.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Architecture SGBD/TP4/SQL Queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../Architecture SGBD/TP4/SQL Queries.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CA/Project/KMPAlgorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CA/Project/KMPAlgorithm/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APDescription.txt" beforeDir="false" afterPath="$PROJECT_DIR$/APDescription.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP5/Searcher$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP5/Searcher$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP5/Searcher$MaFenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP5/Searcher$MaFenetre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP5/Searcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP5/Searcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Searcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Searcher.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,43 +23,43 @@
     <session id="-1644026406">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1086" />
+          <entry key="java" value="1226" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1086" />
+          <entry key="JAVA" value="1226" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Searcher.java">
+        <entry file="file://$PROJECT_DIR$/src/LaunchJade1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="220">
+              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -73,6 +73,24 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Ts</find>
+      <find>Ns</find>
+      <find>boutonCalcul</find>
+      <find>lblTypeService2</find>
+      <find>lblEtiq</find>
+      <find>fieldTs</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>lblEtiq</replace>
+      <replace>fieldNs</replace>
+      <replace>btnRegister</replace>
+      <replace>lblNomService</replace>
+      <replace>lblTypeService</replace>
+      <replace>fieldTypeService</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
@@ -80,6 +98,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Searcher.java" />
+        <option value="$PROJECT_DIR$/src/Service.java" />
+        <option value="$PROJECT_DIR$/src/Assessment.java" />
+        <option value="$PROJECT_DIR$/src/LaunchJade1.java" />
       </list>
     </option>
   </component>
@@ -102,7 +123,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -120,12 +140,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543919744858" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545124569775" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Jars/jade.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -133,6 +154,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Learn\Master1\M1 2018-2019\TP Master1\SMA\TP5\src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -146,15 +172,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="TP5" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="jade.Boot" />
+  <component name="RunManager" selected="Application.Assessment">
+    <configuration name="Assessment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Assessment" />
       <module name="TP5" />
-      <option name="PROGRAM_PARAMETERS" value="-gui Houari:Searcher" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TP5" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="jade.Boot" />
+      <module name="TP5" />
+      <option name="PROGRAM_PARAMETERS" value="-gui MohammedService:Service;HouariSearch:Searcher" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.TP5" />
+      <item itemvalue="Application.Assessment" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Assessment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -167,43 +209,47 @@
       <option name="presentableId" value="Default" />
       <updated>1543914294698</updated>
       <workItem from="1543914296776" duration="3454000" />
+      <workItem from="1544518242380" duration="3068000" />
+      <workItem from="1544522024307" duration="305000" />
+      <workItem from="1545124120212" duration="416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3454000" />
+    <option name="totallyTimeSpent" value="7243000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,11 +261,39 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Searcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+        <state relative-caret-position="234">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assessment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#68#69#0" expanded="true" />
+            <element signature="e#92#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LaunchJade1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
         </state>
       </provider>
     </entry>

@@ -17,15 +17,17 @@ public class Searcher extends Agent {
     private boolean flag;
     private AID[] serviceAgents;
 
-    private JLabel lblEtiq;
-    private JTextField fieldTs;
+    private JLabel lblTypeService;
+    private JTextField fieldTypeService;
+
     private JButton btnSearch, btnKill;
 
     public class MaFenetre extends JFrame implements ActionListener {
 
         public MaFenetre() {
-            lblEtiq = new JLabel("Type de service");
-            fieldTs = new JTextField(15);
+            lblTypeService = new JLabel("Type de service");
+            fieldTypeService = new JTextField(15);
+            
             btnSearch = new JButton("Search");
             btnKill = new JButton("Kill");
 
@@ -35,8 +37,8 @@ public class Searcher extends Agent {
             Container contenu = getContentPane();
             contenu.setLayout(new FlowLayout());
 
-            contenu.add(lblEtiq);
-            contenu.add(fieldTs);
+            contenu.add(lblTypeService);
+            contenu.add(fieldTypeService);
             contenu.add(btnSearch);
             contenu.add(btnKill);
 
@@ -68,7 +70,7 @@ public class Searcher extends Agent {
                     // Mise à jour de la liste des agents service
                     DFAgentDescription template = new DFAgentDescription();
                     ServiceDescription sd = new ServiceDescription();
-                    sd.setType(fieldTs.getText());
+                    sd.setType(fieldTypeService.getText());
                     template.addServices(sd);
                     try {
                         DFAgentDescription[] result = DFService.search(myAgent, template);
