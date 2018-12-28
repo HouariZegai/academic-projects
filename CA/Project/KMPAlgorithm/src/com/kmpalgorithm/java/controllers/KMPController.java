@@ -19,6 +19,7 @@ import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeTableColumn;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Paint;
+import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import javafx.stage.FileChooser;
 
@@ -78,19 +79,21 @@ public class KMPController implements Initializable {
     public static String inputText;
     public static String pattern;
 
-    // Data of table
+    // Data of table+
     private ObservableList<TableHistory> listHistory = FXCollections.observableArrayList();
     // Number of ligne
     private int indexTable = 0;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        // just for test
+        areaInput.setText("hello my name is hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh world");
+        fieldPattern.setText("name ");
+
         comboAlgorithmType.getItems().addAll("KMP");
 
         // just for testing
         comboAlgorithmType.getSelectionModel().select(0);
-        areaInput.setText("Hello World !");
-        //fieldPattern.setText("hel");
 
         toastMsg = new JFXSnackbar(parentLeft);
         areaInput.setOnKeyTyped(e -> {onRemoveOutput();});
@@ -277,14 +280,14 @@ public class KMPController implements Initializable {
             if(indexTableOfFound < indexs.size() && indexs.get(indexTableOfFound) == i) {
                 indexTableOfFound++;
                 if(!str.equals("")) {
-                    addLabelNotFound(str);
+                    fieldResult.getChildren().add(getTextNotFound(str));
                     str = "";
                 }
 
                 for(int j = 0; j < patternLength; j++) {
                     str += inputTxt.charAt(i++);
                 }
-                addLabelFound(str);
+                fieldResult.getChildren().add(getTextFound(str));
                 str = "";
                 i--;
             } else {
@@ -293,24 +296,22 @@ public class KMPController implements Initializable {
         }
 
         if(!str.equals("")) {
-            addLabelNotFound(str);
+            fieldResult.getChildren().add(getTextNotFound(str));
         }
     }
 
-    private void addLabelFound(String txt) {
-        Label label = new Label(txt);
-        label.setStyle("-fx-font-size: 16px;" +
-                "-fx-background-color: #D00;" +
-                "-fx-text-fill: #FFF");
+    private Text getTextFound(String txt) {
+        Text text = new Text(txt);
+        text.setStyle("-fx-font-size: 16px; -fx-fill: #F00;");
 
-        fieldResult.getChildren().add(label);
+        return text;
     }
 
-    private void addLabelNotFound(String txt) {
-        Label label = new Label(txt);
-        label.setStyle("-fx-font-size: 16px;");
+    private Text getTextNotFound(String txt) {
+        Text text = new Text(txt);
+        text.setStyle("-fx-font-size: 16px;");
 
-        fieldResult.getChildren().add(label);
+        return text;
     }
 
 }
