@@ -1,6 +1,6 @@
 # KMP Algorithm
 Algorithm complexity project
-<br />
+<br /><br />
 [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/HouariZegai/TP-Master1/blob/master/LICENSE)
 ## What is KMP Algorithm ?
 Knuth–Morris–Pratt string-searching algorithm (or KMP algorithm) searches for occurrences of a "word" W within a main "text string" S by employing the observation that when a mismatch occurs, the word itself embodies sufficient information to determine where the next match could begin, thus bypassing re-examination of previously matched characters. 
