@@ -4,6 +4,7 @@ import jade.core.Runtime;
 import jade.core.Profile;
 import jade.core.ProfileImpl;
 import jade.wrapper.*;
+import my_try.Searcher;
 
 public class LaunchJade1 {
     private Runtime rt;
@@ -41,9 +42,11 @@ public class LaunchJade1 {
 
         try {
 
-            AgentController serviceAgent = mc.createNewAgent("Service-Agent", Service.class.getName(), new Object[]{});
+            AgentController serviceAgent = mc.createNewAgent("Service-Agent", my_try.Service.class.getName(), new Object[]{});
             serviceAgent.start();
-            AgentController searcherAgent = mc.createNewAgent("Sercher-Agent", Searcher.class.getName(), new Object[]{});
+            AgentController serviceAgent2 = mc.createNewAgent("Service-Agent2", my_try.Service.class.getName(), new Object[]{});
+            serviceAgent2.start();
+            AgentController searcherAgent = mc.createNewAgent("Sercher-Agent", my_try.Searcher.class.getName(), new Object[]{});
             searcherAgent.start();
 
         } catch (Exception e) {

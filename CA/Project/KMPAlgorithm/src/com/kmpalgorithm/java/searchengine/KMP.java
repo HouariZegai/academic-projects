@@ -32,8 +32,6 @@ public class KMP {
     private int[] computePrefixArray(char[] pattern) { // Calculate table of prefix
         int[] result = new int[pattern.length];
         result[0] = 0;
-//        for(int i = 1; i < result.length; i++)
-//            result[i] = -1;
         int i = 1;
         int j = 0;
 

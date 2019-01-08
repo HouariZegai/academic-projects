@@ -6,11 +6,15 @@
       <change beforePath="$PROJECT_DIR$/../../Architecture SGBD/TP4/SQL Queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../Architecture SGBD/TP4/SQL Queries.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../CA/Project/KMPAlgorithm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../CA/Project/KMPAlgorithm/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APDescription.txt" beforeDir="false" afterPath="$PROJECT_DIR$/APDescription.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP5/LaunchJade1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP5/LaunchJade1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP5/Searcher$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP5/Searcher$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP5/Searcher$MaFenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP5/Searcher$MaFenetre.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP5/Searcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP5/Searcher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Searcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Searcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP5/Service$MaFenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP5/Service$MaFenetre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP5/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP5/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LaunchJade1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LaunchJade1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Searcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +27,7 @@
     <session id="-1644026406">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.5" value="1" />
@@ -33,38 +37,28 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="5" />
+          <entry key="java" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="5" />
+          <entry key="JAVA" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1226" />
+          <entry key="java" value="1471" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1226" />
+          <entry key="JAVA" value="1471" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LaunchJade1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,6 +75,8 @@
       <find>lblTypeService2</find>
       <find>lblEtiq</find>
       <find>fieldTs</find>
+      <find>fla</find>
+      <find>flag</find>
     </findStrings>
     <replaceStrings>
       <replace>lblEtiq</replace>
@@ -97,9 +93,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Searcher.java" />
-        <option value="$PROJECT_DIR$/src/Service.java" />
         <option value="$PROJECT_DIR$/src/Assessment.java" />
+        <option value="$PROJECT_DIR$/src/Service.java" />
+        <option value="$PROJECT_DIR$/src/Searcher.java" />
+        <option value="$PROJECT_DIR$/src/my_try/Searcher.java" />
         <option value="$PROJECT_DIR$/src/LaunchJade1.java" />
       </list>
     </option>
@@ -136,6 +133,12 @@
               <item name="TP5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TP5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="my_try" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -146,7 +149,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545124569775" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545127508950" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Jars/jade.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -157,6 +160,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Learn\Master1\M1 2018-2019\TP Master1\SMA\TP5\src\my_try" />
       <recent name="D:\Learn\Master1\M1 2018-2019\TP Master1\SMA\TP5\src" />
     </key>
   </component>
@@ -211,16 +215,15 @@
       <workItem from="1543914296776" duration="3454000" />
       <workItem from="1544518242380" duration="3068000" />
       <workItem from="1544522024307" duration="305000" />
-      <workItem from="1545124120212" duration="416000" />
+      <workItem from="1545124120212" duration="3373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7243000" />
+    <option name="totallyTimeSpent" value="10200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -230,8 +233,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -259,22 +262,35 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Searcher.java">
+    <entry file="file://$PROJECT_DIR$/src/Searche.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service.java">
+    <entry file="file://$PROJECT_DIR$/src/Searcher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+        <state relative-caret-position="216">
+          <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="class#MaFenetre#0;class#Searcher#0" />
+            <element signature="method#MaFenetre#0;class#MaFenetre#0;class#Searcher#0" />
+            <element signature="method#actionPerformed#0;class#MaFenetre#0;class#Searcher#0" />
+            <element signature="method#setup#0;class#Searcher#0" />
+            <element signature="class#1477:2654" />
+            <element signature="method#onTick#0;class#1477:2654" />
+            <element signature="method#takeDown#0;class#Searcher#0" />
           </folding>
         </state>
       </provider>
@@ -292,8 +308,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LaunchJade1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        <state relative-caret-position="131">
+          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/my_try/Searcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="91" column="30" lean-forward="true" selection-start-line="91" selection-start-column="30" selection-end-line="91" selection-end-column="30" />
         </state>
       </provider>
     </entry>

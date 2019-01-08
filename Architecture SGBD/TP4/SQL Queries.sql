@@ -27,3 +27,10 @@ INSERT INTO uv (pkcode, fketu)
 	VALUES ('NF26', '1800675001066');
 INSERT INTO uv (pkcode, fketu)
 	VALUES ('NF29', '1800675001066');
+
+-- Delete all data from table uv
+DELETE FROM uv;
+-- Delete all data from table etu
+DELETE FROM etu;
+
+-- -------------------------------------
