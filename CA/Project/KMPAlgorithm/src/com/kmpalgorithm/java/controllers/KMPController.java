@@ -86,9 +86,6 @@ public class KMPController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        // just for test
-        areaInput.setText("hello my name is hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh world");
-        fieldPattern.setText("name ");
 
         comboAlgorithmType.getItems().addAll("KMP");
 

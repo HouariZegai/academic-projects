@@ -11,7 +11,7 @@ public class Launcher extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/kmpalgorithm/resources/views/KMP.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/com/kmpalgorithm/resources/views/GraphComplexity.fxml"));
 
         stage.setScene(new Scene(root));
         Launcher.stage = stage;
