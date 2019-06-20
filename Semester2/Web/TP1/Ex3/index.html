@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TP1 - Ex3</title>
+</head>
+<body>
+	<script>
+		function addition() {
+			var sum = 0;
+			for(var i = 0; i < arguments.length; i++) {
+				sum += arguments[i];
+			}
+
+			document.writeln("sommme:" + sum + "<br>")
+		}
+
+		addition(1, 2, 3);
+		addition(-2, 10);
+		addition(25);
+		addition();
+	</script>
+</body>
+</html>
