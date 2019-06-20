@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TP1 - Ex5</title>
+	<style>
+		* {
+			font-family: Tahoma
+		}
+
+		input {
+			padding: 5px;
+			margin-top: 5px;
+			margin-right: 5px;
+			width: 200px;
+		}
+
+		input[type="submit"] {
+			width: 215px;	
+		}
+	</style>
+</head>
+<body>
+	<h3>Sign In</h3>
+	<form name="myForm" onsubmit="return validateForm();">
+		<input type="text" name="user" placeholder="Username"><label id="userError"></label><br>
+		<input type="password" name="pass" placeholder="Password"><br>
+		<input type="submit" value="Login">
+	</form>
+
+	<script>
+		function validateForm() {
+			var  user = document.forms["myForm"]["user"].value;
+
+			if(user.trim() == "") {
+				document.getElementById("userError").innerHTML = "Remplir le champ svp !";
+				return false;
+			}
+			return true;
+		}
+	</script>
+</body>
+</html>
