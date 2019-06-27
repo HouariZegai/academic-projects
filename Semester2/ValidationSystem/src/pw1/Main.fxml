@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pw1.MainController">
+   <children>
+      <Circle fill="DODGERBLUE" layoutX="320.0" layoutY="152.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="16.0" layoutX="277.0" layoutY="41.0" stroke="BLACK" strokeType="INSIDE" width="85.0" />
+      <Circle fill="DODGERBLUE" layoutX="514.0" layoutY="267.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="DODGERBLUE" layoutX="320.0" layoutY="379.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="16.0" layoutX="277.0" layoutY="259.0" stroke="BLACK" strokeType="INSIDE" width="85.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="16.0" layoutX="277.0" layoutY="465.0" stroke="BLACK" strokeType="INSIDE" width="85.0" />
+      <Line endX="2.0" endY="56.0" layoutX="318.0" layoutY="70.0" startX="2.0" startY="-12.0" />
+      <Line endX="1.5" endY="67.0" layoutX="318.0" layoutY="192.0" startX="2.0" startY="-12.0" />
+      <Line endX="2.0" endY="66.0" layoutX="318.0" layoutY="287.0" startX="2.0" startY="-12.0" />
+      <Line endX="2.0" endY="66.0" layoutX="318.0" layoutY="398.0" startX="2.0" startY="7.0" />
+      <Line endX="128.0" endY="-30.0" layoutX="360.0" layoutY="297.0" startX="2.0" startY="-30.0" />
+      <Label fx:id="lblSalleAttente" layoutX="315.0" layoutY="137.0" text="10" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSalleExamen" layoutX="315.0" layoutY="363.0" text="0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMedecineDisponible" layoutX="509.0" layoutY="252.0" text="1" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="356.0" layoutY="370.0" text="Salle examen" />
+      <Label layoutX="358.0" layoutY="144.0" text="Salle attente" />
+      <Label layoutX="552.0" layoutY="258.0" text="Medecine disponible" />
+      <Label layoutX="377.0" layoutY="41.0" text="Arrivé d'un patient" />
+      <Label layoutX="326.0" layoutY="285.0" text="Entrer dans la salle d'examen" />
+      <Label layoutX="144.0" layoutY="465.0" text="D'epart d'un patient" />
+      <ListView fx:id="listMaquette" layoutX="25.0" layoutY="39.0" prefHeight="361.0" prefWidth="239.0" />
+      <Label layoutX="25.0" layoutY="14.0" text="Maquette" />
+      <JFXButton buttonType="RAISED" layoutX="563.0" layoutY="474.0" onAction="#onStartSimulation" prefHeight="40.0" prefWidth="176.0" style="-fx-background-color: #2196f3;" text="Start simulation" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
