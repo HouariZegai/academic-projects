@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ex1 - Calculate Age</title>
+</head>
+<body>
+
+	<input id="birthday" type="date">
+    <button onclick="calcAge();">Calculate</button>
+    <p id="result"></p>
+
+
+	<script>
+		var birthday = document.getElementById("birthday"),
+				result = document.getElementById("result");
+
+        function calcAge() {
+			if(birthday.value.length === 0) {
+		        result.innerText = "Please type your birth date!";
+		        return false;
+	        }
+
+			var birthdayArray = birthday.value.split("-"),
+	            birthdayDays = Number.parseInt(birthdayArray[0]) * 365 + Number.parseInt(birthdayArray[1]) * 31 + Number.parseInt(birthdayArray[2]),
+            	dateNow = new Date(),
+	         	nowDays = dateNow.getFullYear() * 365 + (dateNow.getMonth() + 1) * 31 + dateNow.getDate(),
+	         	diffDate = nowDays - birthdayDays;
+
+            if (diffDate < 0) {
+                result.innerText = "Date is invalid!";
+                return false;
+            }
+            
+            result.innerText = "Your age is: " + Math.floor(diffDate / 365) + " Year, " + (Math.floor(diffDate % 365 / 31)) +" Month, " + ((diffDate % 365) % 31) +" Day";
+
+        }
+
+
+/*
+		function getAge(birthday) { // birthday is a date
+		    var ageDifMs = Date.now() - birthday.getTime();
+		    var ageDate = new Date(ageDifMs); // miliseconds from epoch
+		    return Math.abs(ageDate.getUTCFullYear() - 1970);
+		}
+
+		var birthDay = new Date("1996", "11", "17");
+
+		document.write(calculateAge(birthDay));
+*/
+	</script>
+</body>
+</html>
