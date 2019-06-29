@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>PW2 - Ex2 - Ajax</title>
+</head>
+
+<body>
+    <a href="#" onclick="clickMeClicked()">Click me!</a>
+    <p>Number of clicks is: <span id="clickCounter">0</span></p>
+
+    <script>
+        var xmlhttp,
+            clickCounterElement = document.getElementById("clickCounter");
+
+        function createRequestObject() {
+            if (window.XMLHttpRequest) {
+                return new XMLHttpRequest(); // code for modern browsers
+            } else {
+                return new ActiveXObject("Microsoft.XMLHTTP"); // code for old IE browsers
+            }
+        }
+
+        function clickMeClicked() { // when we click to the link
+            xmlhttp = createRequestObject(); // Create Request Object;
+            var counter = Number.parseInt(clickCounterElement.innerText);
+
+            clickCounterElement.innerText = "Loading...";
+
+            xmlhttp.onreadystatechange = handleAjaxReturn;   
+            // specific the type of request (get or post)
+            xmlhttp.open("GET", "server_page.php?counter=" + counter, true);
+            // send the request
+            xmlhttp.send();
+        }
+
+        function handleAjaxReturn() {
+            console.log(xmlhttp.status);
+            if (xmlhttp.readyState == 4) {
+                if(xmlhttp.status == 200) {
+                    clickCounterElement.innerText = xmlhttp.responseText;
+                } else {
+                    clickCounterElement.innerHTML = "<strong>N/A</strong>";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
