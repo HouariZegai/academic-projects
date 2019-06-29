@@ -1,8 +1,0 @@
-# Intellij
-.idea/
-out/
-*.iml
-
-# Maven
-log/
-target/
