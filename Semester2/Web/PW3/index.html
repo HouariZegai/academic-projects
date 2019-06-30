@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PW3</title>
+</head>
+<body>
+
+	<script>
+			function member(id, name, grade) {
+			  this.id       = id;
+			  this.name     = name;
+			  this.grade    = grade;
+
+			  this.toString = function() {
+			    return "ID: "+this.id+", Name: "+this.name+", Grade: "+this.grade;
+			  }
+			}
+			 
+			function team() {
+			  this.members = new Array();
+
+			  this.add = function(member) {
+			    this.members[this.members.length] = member;
+			  }
+
+			  this.toString = function() {
+			    return this.members.join("<br>");
+			  }
+			}
+			 
+			var monTeam = new team();
+			 
+			monTeam.add(new member(1, "Houari ZEGAI", "Software Engineer"));
+			monTeam.add(new member(2, "Leila Benothman", "Web Developer"));
+			 
+			document.writeln(monTeam);
+	</script>
+</body>
+</html>
