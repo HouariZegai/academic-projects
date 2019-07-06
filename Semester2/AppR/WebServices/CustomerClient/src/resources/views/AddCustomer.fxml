@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" spacing="60.0" style="-fx-background-color: #FFF;" stylesheets="@../css/crud-forms.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.houarizegai.customerclient.controllers.AddCustomerController">
+   <children>
+      <Label styleClass="title" text="New Customer" />
+      <VBox maxWidth="-Infinity" prefWidth="365.0" spacing="30.0">
+         <children>
+            <JFXTextField fx:id="fieldFirstName" prefWidth="227.0" promptText="First name" styleClass="field" />
+            <JFXTextField fx:id="fieldLastName" promptText="Last name" styleClass="field" />
+            <JFXTextField fx:id="fieldEmail" promptText="Email" styleClass="field" />
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" spacing="10.0" VBox.vgrow="ALWAYS">
+         <children>
+            <JFXButton onAction="#onAdd" text="Save">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-green" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton onAction="#onClear" text="Clear">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-blue" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton onAction="#onClose" text="Cancel">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-red" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="50.0" left="50.0" right="50.0" top="30.0" />
+   </padding>
+</VBox>
