@@ -1,0 +1,68 @@
+<html>
+	<head>
+	</head>
+	<body>
+
+	<form>
+		Licence: <input type="text" id="licence" onFocus="onFocusL()" /><br>
+		Master: <input type="text" id="master" onFocus="onFocusM()" /><br>
+		Doctorat: <input type="text" id="doctorat" onFocus="onFocusD()" /><br>
+
+	</form>
+	<script>
+		function createRequestObject() {
+			var http;
+			if(window.XMLHttpRequest) {
+				http = new XMLHttpRequest();
+			} else {
+				http = new ActiveXObject("Microsoft.XMLHttp");
+			}
+			return http;
+		}
+
+		function onFocusL() {
+			var http = createRequestObject();
+
+			http.open('GET', 'getInfo.php?type=0', true);
+			http.onreadystatechange = function() {
+				if(http.readyState == 4) {
+					if(http.status == 200) {
+						document.getElementById("licence").placeholder = http.responseText;	
+					}
+				}	
+			};
+		 	http.send(null);
+		}
+
+		function onFocusM() {
+			var http = createRequestObject();
+
+			http.open('GET', 'getInfo.php?type=1', true);
+			http.onreadystatechange = function() {
+				if(http.readyState == 4) {
+					if(http.status == 200) {
+						document.getElementById("master").placeholder = http.responseText;	
+					}
+				}	
+			};
+		 	http.send(null);
+		}
+
+		function onFocusD() {
+			var http = createRequestObject();
+
+			http.open('GET', 'getInfo.php?type=2', true);
+			http.onreadystatechange = function() {
+				if(http.readyState == 4) {
+					if(http.status == 200) {
+						document.getElementById("doctorat").placeholder = http.responseText;	
+					}
+				}	
+			};
+		 	http.send(null);
+		}
+
+
+	</script>	
+</body>	
+</html>
