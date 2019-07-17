@@ -1,6 +1,6 @@
 package com.houarizegai.customerclient.controllers;
 
-import services.Customer;
+import com.houarizegai.customerclient.model.CustomerModel;
 import com.houarizegai.customerclient.service.CustomerService;
 import com.jfoenix.controls.*;
 import javafx.fxml.FXML;
@@ -28,7 +28,7 @@ public class EditCustomerController implements Initializable {
     private JFXSnackbar toastMsg;
 
     // customer infos
-    public static Customer customerInfo;
+    public static CustomerModel customerInfo;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -53,9 +53,8 @@ public class EditCustomerController implements Initializable {
             return;
         }
 
-
         // Using builder design pattern to make customer object
-        Customer customer = new Customer();
+        CustomerModel customer = new CustomerModel();
         customer.setId(Integer.parseInt(fieldId.getText()));
         customer.setFirstName(fieldFirstName.getText());
         customer.setLastName(fieldLastName.getText());

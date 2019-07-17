@@ -33,5 +33,39 @@
         <delete dir="${build.generated.dir}/jax-wsCache/CustomerWS"/>
         <delete dir="${build.generated.sources.dir}/jax-ws/services"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-CustomerWS"/>
+    <target name="wsimport-client-CustomerWS_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/CustomerWS_1"/>
+        <property name="wsdl-CustomerWS_1" location="xml-resources/web-service-references/CustomerWS_1/wsdl/localhost_8080/CustomerWS/CustomerWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CustomerWS_1" destdir="${build.generated.dir}/jax-wsCache/CustomerWS_1" wsdl="${wsdl-CustomerWS_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/CustomerWS/CustomerWS?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-CustomerWS_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/CustomerWS_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/CustomerWS_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-CustomerWS_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/CustomerWS_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/services"/>
+    </target>
+    <target name="wsimport-client-CustomerWS_2" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/CustomerWS_2"/>
+        <property name="wsdl-CustomerWS_2" location="xml-resources/web-service-references/CustomerWS_2/wsdl/localhost_8080/CustomerWS/CustomerWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/CustomerWS_2" destdir="${build.generated.dir}/jax-wsCache/CustomerWS_2" wsdl="${wsdl-CustomerWS_2}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/CustomerWS/CustomerWS?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-CustomerWS_2}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/CustomerWS_2"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/CustomerWS_2">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-CustomerWS_2" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/CustomerWS_2"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/services"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-CustomerWS, wsimport-client-CustomerWS_1, wsimport-client-CustomerWS_2"/>
 </project>

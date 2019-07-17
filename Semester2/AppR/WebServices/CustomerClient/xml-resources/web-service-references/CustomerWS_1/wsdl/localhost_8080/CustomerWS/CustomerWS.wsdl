@@ -10,11 +10,11 @@
 <message name="getAllResponse">
 <part name="parameters" element="tns:getAllResponse"/>
 </message>
-<message name="delete">
-<part name="parameters" element="tns:delete"/>
+<message name="update">
+<part name="parameters" element="tns:update"/>
 </message>
-<message name="deleteResponse">
-<part name="parameters" element="tns:deleteResponse"/>
+<message name="updateResponse">
+<part name="parameters" element="tns:updateResponse"/>
 </message>
 <message name="add">
 <part name="parameters" element="tns:add"/>
@@ -22,28 +22,28 @@
 <message name="addResponse">
 <part name="parameters" element="tns:addResponse"/>
 </message>
-<message name="update">
-<part name="parameters" element="tns:update"/>
+<message name="delete">
+<part name="parameters" element="tns:delete"/>
 </message>
-<message name="updateResponse">
-<part name="parameters" element="tns:updateResponse"/>
+<message name="deleteResponse">
+<part name="parameters" element="tns:deleteResponse"/>
 </message>
 <portType name="CustomerWS">
 <operation name="getAll">
 <input wsam:Action="http://services/CustomerWS/getAllRequest" message="tns:getAll"/>
 <output wsam:Action="http://services/CustomerWS/getAllResponse" message="tns:getAllResponse"/>
 </operation>
-<operation name="delete">
-<input wsam:Action="http://services/CustomerWS/deleteRequest" message="tns:delete"/>
-<output wsam:Action="http://services/CustomerWS/deleteResponse" message="tns:deleteResponse"/>
+<operation name="update">
+<input wsam:Action="http://services/CustomerWS/updateRequest" message="tns:update"/>
+<output wsam:Action="http://services/CustomerWS/updateResponse" message="tns:updateResponse"/>
 </operation>
 <operation name="add">
 <input wsam:Action="http://services/CustomerWS/addRequest" message="tns:add"/>
 <output wsam:Action="http://services/CustomerWS/addResponse" message="tns:addResponse"/>
 </operation>
-<operation name="update">
-<input wsam:Action="http://services/CustomerWS/updateRequest" message="tns:update"/>
-<output wsam:Action="http://services/CustomerWS/updateResponse" message="tns:updateResponse"/>
+<operation name="delete">
+<input wsam:Action="http://services/CustomerWS/deleteRequest" message="tns:delete"/>
+<output wsam:Action="http://services/CustomerWS/deleteResponse" message="tns:deleteResponse"/>
 </operation>
 </portType>
 <binding name="CustomerWSPortBinding" type="tns:CustomerWS">
@@ -57,7 +57,7 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="delete">
+<operation name="update">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>
@@ -75,7 +75,7 @@
 <soap:body use="literal"/>
 </output>
 </operation>
-<operation name="update">
+<operation name="delete">
 <soap:operation soapAction=""/>
 <input>
 <soap:body use="literal"/>

@@ -1,6 +1,6 @@
 package com.houarizegai.customerclient.controllers;
 
-import services.Customer;
+import com.houarizegai.customerclient.model.CustomerModel;
 import com.houarizegai.customerclient.service.CustomerService;
 import com.jfoenix.controls.*;
 import javafx.fxml.FXML;
@@ -47,7 +47,7 @@ public class AddCustomerController implements Initializable {
         }
 
         // Using builder design pattern to make customer object
-        Customer customer = new Customer();
+        CustomerModel customer = new CustomerModel();
         customer.setFirstName(fieldFirstName.getText());
         customer.setLastName(fieldLastName.getText());
         customer.setEmail(fieldEmail.getText());

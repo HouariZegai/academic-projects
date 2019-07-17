@@ -1,6 +1,6 @@
 package com.houarizegai.customerclient.controllers;
 
-import services.Customer;
+import com.houarizegai.customerclient.model.CustomerModel;
 import com.houarizegai.customerclient.service.CustomerService;
 import com.jfoenix.controls.*;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
@@ -43,7 +43,7 @@ public class CustomerController implements Initializable {
 
     private JFXSnackbar toastMsg;
     // data of table
-    private List<Customer> Customers;
+    private List<CustomerModel> Customers;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -134,7 +134,7 @@ public class CustomerController implements Initializable {
 
         this.Customers = CustomerService.getCustomers(); // Get CustomerRegex from database
         if (Customers != null) {
-            for (Customer customer : Customers) {
+            for (CustomerModel customer : Customers) {
                 TableCustomer CustomerT = new TableCustomer(customer.getId(),
                         customer.getFirstName(),
                         customer.getLastName(),
@@ -170,9 +170,9 @@ public class CustomerController implements Initializable {
             toastMsg.show("Please, select the customer you want to edit it!", 2000);
             return;
         }
-        for (Customer Customer : Customers) {
-            if (Customer.getId() == Integer.parseInt(numCustomerSelected)) {
-                EditCustomerController.customerInfo = Customer;
+        for (CustomerModel customer : Customers) {
+            if (customer.getId() == Integer.parseInt(numCustomerSelected)) {
+                EditCustomerController.customerInfo = customer;
                 break;
             }
         }
@@ -195,9 +195,9 @@ public class CustomerController implements Initializable {
             return;
         }
 
-        for (Customer c : Customers) {
+        for (CustomerModel c : Customers) {
             if (c.getId() == Integer.parseInt(numCustomerSelected)) {
-                Customer customer = new Customer();
+                CustomerModel customer = new CustomerModel();
                 customer.setId(c.getId());
                 customer.setFirstName(c.getFirstName());
                 customer.setLastName(c.getLastName());

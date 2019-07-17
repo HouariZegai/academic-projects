@@ -1,6 +1,6 @@
 package com.houarizegai.customerclient.controllers;
 
-import services.Customer;
+import com.houarizegai.customerclient.model.CustomerModel;
 import com.houarizegai.customerclient.service.CustomerService;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -20,7 +20,7 @@ public class DeleteCustomerController implements Initializable {
     private Label lblId, lblFirstName, lblLastName, lblEmail;
 
     // client u want to delete it
-    public static Customer customer;
+    public static CustomerModel customer;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

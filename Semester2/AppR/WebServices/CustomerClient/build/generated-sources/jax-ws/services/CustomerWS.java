@@ -27,6 +27,18 @@ public interface CustomerWS {
 
     /**
      * 
+     * @return
+     *     returns java.util.List<services.Customer>
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getAll", targetNamespace = "http://services/", className = "services.GetAll")
+    @ResponseWrapper(localName = "getAllResponse", targetNamespace = "http://services/", className = "services.GetAllResponse")
+    @Action(input = "http://services/CustomerWS/getAllRequest", output = "http://services/CustomerWS/getAllResponse")
+    public List<Customer> getAll();
+
+    /**
+     * 
      * @param id
      * @return
      *     returns int
@@ -48,24 +60,12 @@ public interface CustomerWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "update", targetNamespace = "http://services/", className = "services.Update")
-    @ResponseWrapper(localName = "updateResponse", targetNamespace = "http://services/", className = "services.UpdateResponse")
-    @Action(input = "http://services/CustomerWS/updateRequest", output = "http://services/CustomerWS/updateResponse")
-    public int update(
+    @RequestWrapper(localName = "add", targetNamespace = "http://services/", className = "services.Add")
+    @ResponseWrapper(localName = "addResponse", targetNamespace = "http://services/", className = "services.AddResponse")
+    @Action(input = "http://services/CustomerWS/addRequest", output = "http://services/CustomerWS/addResponse")
+    public int add(
         @WebParam(name = "customer", targetNamespace = "")
         Customer customer);
-
-    /**
-     * 
-     * @return
-     *     returns java.util.List<services.Customer>
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getAll", targetNamespace = "http://services/", className = "services.GetAll")
-    @ResponseWrapper(localName = "getAllResponse", targetNamespace = "http://services/", className = "services.GetAllResponse")
-    @Action(input = "http://services/CustomerWS/getAllRequest", output = "http://services/CustomerWS/getAllResponse")
-    public List<Customer> getAll();
 
     /**
      * 
@@ -75,10 +75,10 @@ public interface CustomerWS {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "add", targetNamespace = "http://services/", className = "services.Add")
-    @ResponseWrapper(localName = "addResponse", targetNamespace = "http://services/", className = "services.AddResponse")
-    @Action(input = "http://services/CustomerWS/addRequest", output = "http://services/CustomerWS/addResponse")
-    public int add(
+    @RequestWrapper(localName = "update", targetNamespace = "http://services/", className = "services.Update")
+    @ResponseWrapper(localName = "updateResponse", targetNamespace = "http://services/", className = "services.UpdateResponse")
+    @Action(input = "http://services/CustomerWS/updateRequest", output = "http://services/CustomerWS/updateResponse")
+    public int update(
         @WebParam(name = "customer", targetNamespace = "")
         Customer customer);
 
