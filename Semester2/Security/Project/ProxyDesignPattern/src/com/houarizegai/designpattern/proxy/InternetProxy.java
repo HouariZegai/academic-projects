@@ -5,7 +5,7 @@ import java.util.List;
 
 public class InternetProxy implements ISP {
 
-    private List<String> blockedSites = Arrays.asList("facebook", "twitter");
+    private List<String> blockedSites = Arrays.asList("facebook", "twitter", "youtube");
 
     @Override
     public String serverSite(String url) {
