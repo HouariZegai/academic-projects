@@ -19,9 +19,14 @@ Practical Work solutions &amp; projects of my master degree class at university 
 * [Multi-Agent Systems](Semester1/MAS)
 * [Software Engineering](Semester1/SE)
 * Quality Management
-  * Project: Commercial management system: sorry it's in private repository!
+  * Project - Commercial management system: sorry it's in private repository!
   
 ## :point_right: Semester 2
 * [Web Programming](Semester2/Web)
 * [Distributed Application Construction](Semester2/AppR)
 * [Formal Validation of Computer Systems](Semester2/FVCS/src)
+* [Architecture and Software Development](Semester2/ADL)
+  * [Project - Hotel Reservation System](https://github.com/HouariZegai/HotelReservationSystem)  
+  Web Application using (JavaEE, JSP, Servlet, EJB, GlassFish)
+* [IT Security](Semester2/Security)
+  * [Project - Proxy Design Pattern](Semester2/Security/Project)
