@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
-    <system systemId="http://localhost:8080/CustomerWS/Customer?WSDL" uri="wsdl/localhost_8080/CustomerWS/Customer.wsdl"/>
-    <system systemId="http://localhost:8080/CustomerWS/Customer?xsd=1" uri="wsdl/localhost_8080/CustomerWS/Customer.xsd_1.xsd"/>
-    <system systemId="http://localhost:8080/CustomerWS/Custome?WSDL" uri="wsdl/localhost_8080/CustomerWS/Custome.wsdl"/>
-    <system systemId="http://localhost:8080/CustomerWS/Custome?xsd=1" uri="wsdl/localhost_8080/CustomerWS/Custome.xsd_1.xsd"/>
-    <system systemId="http://localhost:8080/CustomerWS/CustomerWS?WSDL" uri="wsdl/localhost_8080/CustomerWS/CustomerWS.wsdl"/>
-    <system systemId="http://localhost:8080/CustomerWS/CustomerWS?xsd=1" uri="wsdl/localhost_8080/CustomerWS/CustomerWS.xsd_1.xsd"/>
-</catalog>
