@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<amina>
+    <robes>
+        <robe porte="été">rose</robe>
+        <robe porte="été">verte</robe>
+        <robe porte="hiver">blue</robe>
+    </robes>
+    <pentalons>
+        <pantalon porte="été">blanc</pantalon>
+        <pantalon porte="hiver">beige</pantalon>
+    </pentalons>
+</amina>
