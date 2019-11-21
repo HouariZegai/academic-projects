@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT annuaire (personne)+>
+<!ELEMENT personne (nom,prenom,email+,tel*)>
+<!ATTLIST personne type (etudiant | professeur | administration ) "etudiant">
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT tel (#PCDATA)>
+<!ATTLIST tel type (fixe | portable) #REQUIRED>
