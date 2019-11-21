@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Document 1
+<Contacts>
+    <Personne>
+        <nom>Ali</nom>
+        <prenom>Ahmed</prenom>
+        <ville>tiaret</ville>
+    </Personne>
+    <Personne>
+        <nom>Mustapha</nom>
+        <prenom>Said</prenom>
+        <societe> Algérie Telecom </societe>
+        <ville> oran </ville>
+        <Email>ali.ahmed@gmail.com</Email>
+    </Personne>
+</Contacts>
+-->
+
+
+<!-- Document 2 -->
+<Contacts>
+    <Personne>
+        <nom>John</nom>
+        <prenom>Smith</prenom>
+        <date_naiss>19850302</date_naiss>
+        <societe>IBM</societe>
+        <ville>paris</ville>
+        <Email>jsmith@ibm.com</Email>
+        <Email>jsmith@yahoo.com</Email>
+        <Adresse type="home">
+            <ville>
+                <rue>23 Main St</rue>
+                <quartier>Dublin</quartier>
+                <code_postal>4</code_postal>
+            </ville>
+        </Adresse>
+        <Adresse type="work">
+            <rue>1234 High St</rue>
+            <quartier>Boston</quartier>
+            <ZIP>1234</ZIP>
+            <ville>Ireland</ville>
+        </Adresse>
+    </Personne>
+    <Personne>
+        <nom>Tom</nom>
+        <prenom>Dunne</prenom>
+        <societe>polyma</societe>
+        <Position/>
+        <Email>tom.dunne@yahoo.com</Email>
+    </Personne>
+</Contacts>

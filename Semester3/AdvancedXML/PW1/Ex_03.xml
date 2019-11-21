@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<polyèdres>
+    <polyèdre>
+        <nom></nom>
+        <matière></matière>
+        <couleur></couleur>
+        <faces nombre="" >
+            <face color="" />
+            <face color="" />
+        </faces>
+    </polyèdre>
+</polyèdres>
