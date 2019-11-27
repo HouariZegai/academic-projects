@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT agenda (personne+)>
+<!ELEMENT personne (nom, prénom, prenom2?,adresse,téléphone*)>
+<!ATTLIST personne
+ situation (célibataire|marié|pacsé|concubinage) #REQUIRED
+ id_personne ID #REQUIRED
+ id_connait IDREFS #IMPLIED>
+ 
+<!ELEMENT nom (#PCDATA)>
+<!ATTLIST nom titre (M|Mlle|Mme) #REQUIRED>
+<!ELEMENT prénom (#PCDATA)>
+<!ELEMENT prénom2 (#PCDATA)>
+<!ATTLIST prénom2 prénom3 CDATA #IMPLIED>
+<!ELEMENT adresse (rue,code_postal,ville)>
+<!ELEMENT téléphone (#PCDATA)>
+
+<!ATTLIST téléphone Type (perso|bureau|portable) #REQUIRED>
+
+<!ELEMENT rue (#PCDATA)>
+<!ELEMENT code_postal (#PCDATA)>
+<!ELEMENT ville (#PCDATA)>

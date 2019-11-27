@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda SYSTEM "ex07.dtd">
+
+<agenda>
+    <personne situation="célibataire" id_personne="tcl_k22_wjb">
+        <nom titre="M">ZEGAI</nom>
+        <prénom>Houari</prénom>
+        <adresse>
+            <rue>Sidi Khaled</rue>
+            <code_postal>14000</code_postal>
+            <ville>Tiaret</ville>
+        </adresse>
+    </personne>
+</agenda>
