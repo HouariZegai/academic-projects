@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ex01.xsd">
+    
+    <heure>14:01:01</heure>
+    <realnum>-1736.2</realnum>
+    <chaine3char>chai</chaine3char>
+    <imgType>png</imgType>
+    <num13>50</num13>
+</root>
