@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:attribute name="quantité" type="xs:integer" use="optional" default="1"/>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="elem">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="e1" maxOccurs="1"></xs:element>
+                <xs:element name="e2" minOccurs="2" maxOccurs="3"></xs:element>
+                <xs:choice>
+                    <xs:element name="e3" minOccurs="1" maxOccurs="1"></xs:element>
+                    <xs:element name="e4" minOccurs="1" maxOccurs="1"></xs:element>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element> 
+    
+</xs:schema>
