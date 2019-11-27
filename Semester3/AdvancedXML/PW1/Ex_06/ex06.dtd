@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT agenda (personne)* >
+<!ELEMENT personne (nom, prenom, adresse, telephone) >
+<!ELEMENT adresse (rue, code_postal, ville) >
+<!ELEMENT nom (#PCDATA) >
+<!ELEMENT prenom (#PCDATA) >
+<!ELEMENT telephone (#PCDATA) >
+
+<!ELEMENT rue (#PCDATA) >
+<!ELEMENT code_postal (#PCDATA) >
+<!ELEMENT ville (#PCDATA) >

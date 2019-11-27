@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda SYSTEM "ex06.dtd">
+
+<agenda>
+    <personne>
+        <nom>ZEGAI</nom>
+        <prenom>Houari</prenom>
+        <adresse>
+            <rue>Sidi Khaled</rue>
+            <code_postal>14000</code_postal>
+            <ville>Tiaret</ville>
+        </adresse>
+        <telephone>+213797603258</telephone>
+    </personne>
+</agenda>
