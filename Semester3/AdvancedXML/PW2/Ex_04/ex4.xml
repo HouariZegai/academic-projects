@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<annuaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/C:/Users/Houari/Documents/Learn/Master%202/MasterPracticalWork/Semester3/AdvancedXML/PW2/Ex_04/ex4.xsd">
+    <personne nom="nom0">
+        <dateAnniversaire>2006-05-04</dateAnniversaire>
+        <idéesCadeaux>idéesCadeaux0</idéesCadeaux>
+        <téléphone>
+            <heuresDAppel heureDébut="heureDébut0" heureFin="heureFin0"/>
+        </téléphone>
+    </personne>
+</annuaire>

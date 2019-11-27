@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="annuaire">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="personne">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="dateAnniversaire" type="xs:date"></xs:element>
+                            <xs:element name="idéesCadeaux" type="xs:string"></xs:element>
+                            <xs:element name="téléphone">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="heuresDAppel">
+                                            <xs:complexType>
+                                                <xs:attribute name="heureDébut" use="required"/>
+                                                <xs:attribute name="heureFin" use="required"/>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="numéro">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:nonNegativeInteger">
+                                                <xs:maxExclusive value="100" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="nom" use="required" type="xs:string"></xs:attribute>
+                        <xs:attribute name="prénom" use="optional" type="xs:string"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
