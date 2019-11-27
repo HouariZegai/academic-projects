@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bibliographie xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/C:/Users/Houari/Documents/Learn/Master%202/MasterPracticalWork/Semester3/AdvancedXML/PW2/Ex_03/ex3.xsd">
+    <title>
+    </title>
+    <auteur>
+        <id>50</id>
+        <nom>ZEGIA</nom>
+        <prenom>Houari</prenom>
+        <gender>
+            <femme></femme>
+        </gender>
+    </auteur>
+    <tome>50</tome>
+    <date>2006-05-04</date>
+</bibliographie>

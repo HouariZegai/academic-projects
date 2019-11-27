@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="bibliographie">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="title"></xs:element>
+                <xs:element name="auteur">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id"></xs:element>
+                            <xs:element name="nom"></xs:element>
+                            <xs:element name="prenom"></xs:element>
+                            <xs:element name="gender">
+                                <xs:complexType>
+                                    <xs:choice>
+                                        <xs:element name="homme" />
+                                        <xs:element name="femme" />
+                                    </xs:choice>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="tome">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:nonNegativeInteger"></xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="date" type="xs:date"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
