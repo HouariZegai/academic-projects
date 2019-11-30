@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/txtOnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onCreate(): 0" />
+    <TextView
+        android:id="@+id/txtOnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onStart(): 0" />
+    <TextView
+        android:id="@+id/txtOnResume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onResume(): 0" />
+    <TextView
+        android:id="@+id/txtOnRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onRestart(): 0" />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Back to Activity 1"
+        android:onClick="onBackToActivity1" />
+
+</LinearLayout>
