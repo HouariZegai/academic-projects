@@ -30,3 +30,7 @@ Practical Work solutions &amp; projects of my master degree class at university 
   Web Application using (JavaEE, JSP, Servlet, EJB, GlassFish)
 * [IT Security](Semester2/Security)
   * [Project - Proxy Design Pattern](Semester2/Security/Project)
+  
+## :point_right: Semester 3
+* [Android](Semester3/Android)
+* [Advanced XML](Semester3/AdvancedXML)
