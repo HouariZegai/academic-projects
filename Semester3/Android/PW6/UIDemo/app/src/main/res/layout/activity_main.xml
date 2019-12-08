@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/txtView1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#386999"/>
+            <TextView
+                android:id="@+id/txtView2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#DA557C" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0">
+
+            <TextView
+                android:id="@+id/txtView3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#990000" />
+            <TextView
+                android:id="@+id/txtView4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF" />
+            <TextView
+                android:id="@+id/txtView5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:background="#1818DB"
+                android:alpha="1"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

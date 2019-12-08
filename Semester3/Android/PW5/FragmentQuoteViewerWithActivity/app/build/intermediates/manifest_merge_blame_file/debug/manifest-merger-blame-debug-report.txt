@@ -1,0 +1,54 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="course.examples.quoteviewer"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+7-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:7:5-47
+8        android:minSdkVersion="25"
+8-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:7:5-47
+9        android:targetSdkVersion="29" />
+9-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:7:15-44
+10
+11    <application
+11-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:9:5-27:19
+12        android:allowBackup="true"
+12-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:10:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.0.1] C:\Users\Houari\.gradle\caches\transforms-2\files-2.1\46da25c3e2ae6308b2227b660caa604d\core-1.0.1\AndroidManifest.xml:22:18-86
+14        android:debuggable="true"
+15        android:icon="@drawable/ic_launcher"
+15-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:11:9-45
+16        android:label="@string/app_name"
+16-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:12:9-41
+17        android:testOnly="true"
+18        android:theme="@style/AppTheme" >
+18-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:13:9-40
+19        <activity
+19-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:14:9-22:20
+20            android:name="course.examples.quoteviewer.TitlesListActivity"
+20-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:15:13-47
+21            android:label="@string/app_name" >
+21-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:16:13-45
+22            <intent-filter>
+22-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:17:13-21:29
+23                <action android:name="android.intent.action.MAIN" />
+23-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:18:17-69
+23-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:18:25-66
+24
+25                <category android:name="android.intent.category.LAUNCHER" />
+25-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:20:17-77
+25-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:20:27-74
+26            </intent-filter>
+27        </activity>
+28        <activity
+28-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:23:9-26:20
+29            android:name="course.examples.quoteviewer.QuoteListActivity"
+29-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:24:13-46
+30            android:label="@string/app_name" >
+30-->C:\Users\Houari\Documents\Learn\Master 2\Android\03122019\Codes\FragmentQuoteViewerWithActivity\app\src\main\AndroidManifest.xml:25:13-45
+31        </activity>
+32    </application>
+33
+34</manifest>
