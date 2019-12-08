@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Hadj\AndroidStudioProjects\FragmentQuoteViewerWithActivity\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="461fce46ac1b72850a92690409cb2330ea5d34b7">
+        <dex dex="C:\Users\Hadj\AndroidStudioProjects\FragmentQuoteViewerWithActivity\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_37138853c334b096a31afe1cc5d75947c1fa13bc\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Hadj\AndroidStudioProjects\FragmentQuoteViewerWithActivity\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="2aabb2ce15ff45ce0b917ba7ba7d10afa520f132">
+        <dex dex="C:\Users\Hadj\AndroidStudioProjects\FragmentQuoteViewerWithActivity\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_07f50956f02f3cf7650ba37bc3a4ee4acb3bfb75\classes.dex" />
+    </item>
+
+</items>
