@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<système_solaire xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/C:/Users/Houari/Documents/Learn/Master%202/MasterPracticalWork/Semester3/AdvancedXML/PW2/Ex_05/ex5.xsd">
+    <étoile>
+        <nom>nom0</nom>
+        <type_spectral>type_spectral0</type_spectral>
+        <âge>2006-05-04</âge>
+        <planète type="type0">
+            <masse unit="unit0"/>
+            <distance>0.41</distance>
+            <nom>nom1</nom>
+        </planète>
+    </étoile>
+    <étoile>
+        <nom>nom2</nom>
+        <type_spectral>type_spectral1</type_spectral>
+        <âge>2006-05-04</âge>
+        <planète type="type1">
+            <masse unit="unit1"/>
+            <distance>45.20</distance>
+            <nom>nom3</nom>
+        </planète>
+    </étoile>
+</système_solaire>

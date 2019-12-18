@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="système_solaire">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="étoile" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nom" type="xs:string"></xs:element>
+                            <xs:element name="type_spectral" type="xs:string"></xs:element>
+                            <xs:element name="âge" type="xs:date"></xs:element>
+                            <xs:element name="planète" minOccurs="1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="masse">
+                                            <xs:complexType xml:base="xs:double">
+                                                <xs:attribute name="unit" type="xs:string" use="required"></xs:attribute>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="distance">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:double">
+                                                    <xs:minExclusive value="0.4"></xs:minExclusive>
+                                                    <xs:maxExclusive value="90"></xs:maxExclusive>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="nom" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="type" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
