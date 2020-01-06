@@ -1,0 +1,9 @@
+Ex1:
+
+//livre
+//auteur
+/liste/livre/titre[@genre="jeu"] or //titre[@genre="jeu"]
+//titre/@genre
+(//titre[@genre="photo"])[1]
+//titre/lower-case(text())
+//titre/upper-case(text())

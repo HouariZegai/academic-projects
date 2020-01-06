@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="TP4.xsl" type="text/xsl"?>
+<article>
+    <titre> A propos des DTD </titre>
+    <corps>
+        <p>
+            Les DTD, <important>c'est facile</important>, il suffit de lire le
+            cours de XML Avancé <cite ref="siteXML" />.
+        </p>
+        <p>
+            Il y a aussi de bons livres <cite ref="Web 2.0" />.
+        </p>
+    </corps>
+    <références>
+        <référence code="siteXML">
+            <nom>w3schools</nom>
+            <url> https://www.w3schools.com/xml </url>
+        </référence>
+        <référence code="Web 2.0">
+            <intitulé>Ajax</intitulé>
+            <auteur>Bernd Amann</auteur>
+            <auteur>Philippe Rigaux</auteur>
+            <date>2017</date>
+            <editor>O'Reilly</editor>
+        </référence>
+    </références>
+</article>
