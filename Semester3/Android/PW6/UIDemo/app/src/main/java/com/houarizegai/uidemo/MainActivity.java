@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         if(id == R.id.menuItemMoreInfor) {
             new AlertDialog.Builder(this, R.style.AlertDialogCustom)
-                    .setTitle("Inspired by the works of artists such as \nPiet Mondrian and Ben Nicholson")
+                    .setTitle("Inspired by the works of artists such as Piet Mondrian and Ben Nicholson")
                     .setMessage("Click below to learn more!")
                     .setPositiveButton("Not Now", new DialogInterface.OnClickListener() {
                         @Override
