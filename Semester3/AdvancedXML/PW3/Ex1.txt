@@ -1,4 +1,4 @@
-Ex1:
+Solution Ex1:
 
 //livre
 //auteur
@@ -7,3 +7,4 @@ Ex1:
 (//titre[@genre="photo"])[1]
 //titre/lower-case(text())
 //titre/upper-case(text())
+tokenize(/liste/livre[2]/titre, ' ')[1]
