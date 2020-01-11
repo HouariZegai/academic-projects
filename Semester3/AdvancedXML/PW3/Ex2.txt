@@ -1,0 +1,22 @@
+Solution Ex2:
+
+1. /article
+2. /article/*
+3. //@* or //attribute::*
+4. 
+/descendant::text()
+//text()
+5. //processing-instruction()
+6. //processing-instruction('xml-stylesheet')
+7. //p/text()
+8. //p[important]
+9. //référence[@code = "siteXML"]
+10. 
+//*/auteur[position() = 2]
+//*/auteur[2]
+
+/descendant::auteur[count(preceding::auteur)=1]
+//auteur[count(preceding::auteur)=1]
+
+/descendant::auteur[(preceding::auteur) and not(preceding::auteur/preceding::auteur)]
+//auteur[(preceding::auteur) and not(preceding::auteur/preceding::auteur)]
