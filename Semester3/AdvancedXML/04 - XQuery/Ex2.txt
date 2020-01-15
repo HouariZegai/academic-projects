@@ -1,0 +1,19 @@
+EX2 Solution using XQuery:
+
+1. doc("TP3_2.xml")//article
+2. doc("TP3_2.xml")//article/*
+3. 
+for $attr in doc("TP3_2.xml")//@*
+return concat(name($attr), " = &quot;", $attr, "&quot;&#10;")
+
+4. doc("TP3_2.xml")//article//*[. = text()]
+5. doc("TP3_2.xml")//processing-instruction()
+6. doc("TP3_2.xml")//processing-instruction('xml-stylesheet')
+7. doc("TP3_2.xml")//p/text()
+8. doc("TP3_2.xml")//p[important]
+9. doc("TP3_2.xml")//référence[@code='siteXML']
+10. 
+doc("TP3_2.xml")//auteur[2]
+doc("TP3_2.xml")//auteur[position() = 2]
+
+doc("TP3_2.xml")//auteur[(preceding::auteur) and not(preceding::auteur/preceding::auteur)]
