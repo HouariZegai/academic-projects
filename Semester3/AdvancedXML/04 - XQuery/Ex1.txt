@@ -1,0 +1,74 @@
+Solution of exercise 1 using XQuery:
+
+1. doc('../dataset/TP3_1.xml')//titre
+2. doc('../dataset/TP3_1.xml')//auteur
+3. doc('../dataset/TP3_1.xml')//titre[@genre="jeu"]
+4. for $elem in doc('../dataset/TP3_1.xml')//titre
+return string($elem/@genre)
+5. doc('../dataset/TP3_1.xml')//titre[@genre="photo"][1]
+6. doc('../dataset/TP3_1.xml')//titre/lower-case(text())
+7. doc('../dataset/TP3_1.xml')//titre/upper-case(text())
+8. doc('../dataset/TP3_1.xml')/liste/livre[2]/tokenize(titre, ' ')[1]
+
+Solution of exercise 1 using XQuery using user defined function:
+1.
+declare function local:getTitle($doc) {
+for $title in $doc//titre
+return $title
+};
+local:getTitle(doc('../dataset/TP3_1.xml'))
+
+2.
+declare function local:getAuthor($doc) {
+for $title in $doc//auteur
+return $title
+};
+local:getAuthor(doc('../dataset/TP3_1.xml'))
+
+3.
+declare function local:getGenreJeu($doc) {
+for $title in $doc//titre
+where ($title/@genre = "jeu")
+return $title
+};
+local:getGenreJeu(doc('../dataset/TP3_1.xml'))
+
+4.
+declare function local:getGenreAtt($doc) {
+for $elem in $doc//titre
+return string($elem/@genre)
+};
+
+local:getGenreAtt(doc('../dataset/TP3_1.xml'))
+
+5.
+declare function local:getTitle($doc) {
+for $elem in $doc//titre[1]
+where ($elem/@genre = "photo")
+return $elem
+};
+
+local:getTitle(doc('../dataset/TP3_1.xml'))
+
+6.
+declare function local:getLower($doc) {
+for $title in $doc//titre
+return lower-case(string($title))
+};
+local:getLower(doc('../dataset/TP3_1.xml'))
+
+7.
+declare function local:getUpper($doc) {
+for $title in $doc//titre
+return upper-case(string($title))
+};
+local:getUpper(doc('../dataset/TP3_1.xml'))
+
+8.
+declare function local:getFirstWord($doc) {
+let $title := $doc/liste/livre[2]/titre
+
+return $title/tokenize($title, ' ')[1]
+};
+
+local:getFirstWord(doc('../dataset/TP3_1.xml'))
