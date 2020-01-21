@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Hadj\AndroidStudioProjects\PermissionExampleBoom1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="a8699da4f2bc6f53b3cf6a9d06a080a154230fab">
+        <dex dex="C:\Users\Hadj\AndroidStudioProjects\PermissionExampleBoom1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2df7ed3c0fb0d124a3742650f827c04069bd433d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Hadj\AndroidStudioProjects\PermissionExampleBoom1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="25.0.2"
+        sha1="df5aab1d5bf689cc5dc5b7c0a253732aa7e3be78">
+        <dex dex="C:\Users\Hadj\AndroidStudioProjects\PermissionExampleBoom1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_d267f99461956de87f442cdd70db123fbd6195ac\classes.dex" />
+    </item>
+
+</items>
