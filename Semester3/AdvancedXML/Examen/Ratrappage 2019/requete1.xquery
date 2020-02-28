@@ -1,0 +1,1 @@
+(doc("Exercice_2.xml")//Personne/Adresse/ville)[2]

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblio>
+    <livre lang="en" cote="4010" annee="2019">
+        <titre>Advanced XML</titre>
+        <auteur>Ahamed Moh</auteur>
+        <nb_tomes>2</nb_tomes>
+    </livre>
+    <livre lang="fr" cote="410.02" annee="2019">
+        <titre>XML Avancé</titre>
+        <auteur>Ahamed Moh</auteur>
+        <nb_tomes>3</nb_tomes>
+    </livre>
+</biblio>

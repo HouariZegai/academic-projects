@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Contacts>
+    <Personne>
+        <nom>Djalil</nom>
+        <prenom>ahmed</prenom>
+        <date_naiss>19850302</date_naiss>
+        <Email>dj_ahmed@gmail.com</Email>
+        <Email>j_med@yahoo.com</Email>
+        <Adresse type="home">
+            <ville>Sidi Bel Abbes
+                <rue>20 rue Amir AEK</rue>
+                <quartier>petit lac</quartier>
+                <code_postal>22000</code_postal>
+            </ville>
+        </Adresse>
+        <Adresse type="work">
+            <rue>12 rue benboulaid</rue>
+            <quartier>zone 4</quartier>
+            <code_postal>13000</code_postal>
+            <ville>Tlemcen</ville>
+        </Adresse>
+    </Personne>
+    <Personne>
+        <nnom>bensalah</nnom>
+        <prenom>ali</prenom>
+        <date_naiss>19801121</date_naiss>
+        <Email>ben_ali@gmail.com</Email>
+        <Adresse type="home">
+            <ville>Ain Temouchent
+                <rue>nesroddine</rue>
+                <quartier>la gare</quartier>
+                <code_postal>46000</code_postal>
+            </ville>
+        </Adresse>
+        <Adresse type="work">
+            <rue>01 novembre 1954</rue>
+            <quartier>petit lac</quartier>
+            <code_postal>31000</code_postal>
+            <ville>Oran</ville>
+        </Adresse>
+    </Personne>
+    <Personne>
+        <nom>Youb</nom>
+        <prenom>Sidahmed</prenom>
+        <date_naiss>1984/03/03</date_naiss>
+        <Email>sid_med@gmail.com</Email>
+        <Email>yu_ob@yahoo.com</Email>
+        <Adresse type="home">
+            <ville>Mascara
+                <rue>14 rue Ferhat Habib</rue>
+                <quartier>petit lac</quartier>
+                <code_postal>29000</code_postal>
+            </ville>
+        </Adresse>
+        <Adresse type="work">
+            <rue>05 juillet 1962</rue>
+            <quartier>Afak</quartier>
+            <code_postal>29000</code_postal>
+            <ville>Mascara</ville>
+        </Adresse>
+    </Personne>
+</Contacts>
