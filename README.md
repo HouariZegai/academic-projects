@@ -34,3 +34,4 @@ Practical Work solutions &amp; projects of my master degree class at university 
 ## :point_right: Semester 3
 * [Android](Semester3/Android)
 * [Advanced XML](Semester3/AdvancedXML)
+* [Project Management (Gestion Projet Informatique)](Semester3/GPI)
